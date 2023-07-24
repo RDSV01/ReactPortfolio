@@ -1,0 +1,76 @@
+@font-face {
+  font-family: "Poppins";
+  src: local("Poppins"), url("Poppins-Regular.ttf");
+}
+:root{
+  background-color: #2d2d2d ;
+  font-family:sans-serif;
+  background: linear-gradient(216deg, #7952A3 0%, #2D2D2D 64%);
+}
+body{
+  margin: 0;
+  padding: 0;
+}
+.home{
+  background-image: url("/src/assets/background.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 1000px;
+}
+.navbar{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+  margin-bottom: 50px;
+}
+.navbar ul{
+  display: flex;
+  flex-direction: row;
+  gap: 15px;
+  margin-left: 0;
+  padding: 0;
+}
+.navbar li{
+  color: aliceblue;
+  text-decoration: none;
+  list-style: none;
+  font-size: 18px;
+  font-family: Poppins;
+}
+.card{
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+.card.experience{
+  width: 70%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.onecard{
+  width: 40%;
+  background: rgb(0 0 0 / 28%);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(25px);
+  -webkit-backdrop-filter: blur(5px);
+  padding: 15px;
+  margin-top: 50px;
+} 
+.onecard.multiple{
+  background: rgb(0 0 0 / 28%);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(25px);
+  -webkit-backdrop-filter: blur(5px);
+  padding: 15px;
+  margin-top: 0;
+} 
+.onecard h1{
+  color: white;
+}
+.onecard p{
+  color: white;
+}
