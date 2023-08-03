@@ -68,7 +68,7 @@ const Card = () => {
         </div>
       </div>
       <div className="photoprofile">
-        <img src="../src/assets/pp.jpg" alt="Photo de profile du site" />
+        <img src="../src/assets/img/pp.jpg" alt="Photo de profile du site" />
       </div>
     </div>
   );

@@ -1,0 +1,23 @@
+@font-face {
+  font-family: "Poppins";
+  src: local("Poppins"), url("./assets/font/Poppins-Regular.ttf");
+}
+:root{
+  background-color: #222 ;
+  font-family: 'Poppins';
+}
+body{
+  margin: 0;
+  padding: 0;
+}
+a{
+  text-decoration: none;
+}
+
+
+.home{
+  display: flex;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
