@@ -1,0 +1,34 @@
+.competences{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+}
+.competences h1{
+    color: white;
+    letter-spacing: 3px;
+    font-size: 38px;
+}
+.typecompetences h2{
+    color: white;
+}
+.typecompetences ul{
+    display: flex;
+    list-style: none;
+    gap: 15px;
+    padding: 0;
+    justify-content: center;
+}
+.typecompetences li{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.logocomp img{
+    width: 55px;
+    height: 55px;
+}
+.logocomp span{
+    color: white;
+}

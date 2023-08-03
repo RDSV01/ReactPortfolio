@@ -6,6 +6,7 @@
     margin-bottom: 50px;
     z-index: 1;
     position: fixed;
+    top: 0;
   }
   .navbar a{
     text-decoration: none;
