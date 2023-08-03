@@ -15,7 +15,9 @@
     "react-parallax-tilt": "^1.7.148",
     "react-router-dom": "^6.13.0",
     "react-tilty": "^3.0.0",
-    "tilt.js": "^1.2.1"
+    "three": "^0.155.0",
+    "tilt.js": "^1.2.1",
+    "vanta": "^0.5.24"
   },
   "devDependencies": {
     "@types/react": "^18.0.37",
