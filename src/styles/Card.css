@@ -106,7 +106,7 @@ button {
     .card{
         flex-direction: column-reverse;
         padding: 15px;
-        top: 70px;
+        margin-top: 70px;
         gap: 12px;
     }
     .photoprofile img{
