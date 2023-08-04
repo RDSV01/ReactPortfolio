@@ -8,18 +8,26 @@
   scroll-behavior: smooth;
   overflow-x: hidden; 
 }
+
 body{
   margin: 0;
   padding: 0;
 }
+body::-webkit-scrollbar {
+  background-color: #fff;
+  width: 8px;
+}
+body::-webkit-scrollbar-track {
+  background-color: #222;
+}
+body::-webkit-scrollbar-thumb {
+  background-color: #babac0;
+  border-radius: 16px;
+}
+body::-webkit-scrollbar-button {
+  display:none;
+}
 a{
   text-decoration: none;
 }
-
-
-/* .home{
-  display: flex;
-  background-repeat: no-repeat;
-  background-size: cover;
-} */
 
