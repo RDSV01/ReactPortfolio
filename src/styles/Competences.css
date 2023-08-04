@@ -10,6 +10,7 @@
     letter-spacing: 3px;
     font-size: 38px;
     margin-bottom: 0;
+    text-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 .typecompetences{
     display: flex;
@@ -21,6 +22,7 @@
 .typecompetences h2{
     color: white;
     margin-top: 0;
+    text-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 .typecompetences ul{
     display: flex;

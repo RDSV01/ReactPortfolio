@@ -5,6 +5,8 @@
 :root{
   background-color: #222 ;
   font-family: 'Poppins';
+  scroll-behavior: smooth;
+  overflow-x: hidden; 
 }
 body{
   margin: 0;
