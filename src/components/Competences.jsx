@@ -7,15 +7,7 @@ const Competences = () => {
       <h1>Compétences</h1>
       <div className="typecompetences">
         <ul>
-          <h2>Frameworks & CMS</h2>
-          <li className="logocomp">
-            <img src="../src/assets/icones/react.svg" alt="Logo react" />
-            <span>React</span>
-          </li>
-          <li className="logocomp">
-            <img src="../src/assets/icones/symfony.svg" alt="Logo Symfony" />
-            <span>Symfony</span>
-          </li>
+          <h2>CMS</h2>
           <li className="logocomp">
             <img
               src="../src/assets/icones/wordpress.svg"
@@ -32,7 +24,11 @@ const Competences = () => {
           </li>
         </ul>
         <ul>
-          <h2>Languages</h2>
+          <h2>Front-end</h2>
+          <li className="logocomp">
+            <img src="../src/assets/icones/react.svg" alt="Logo react" />
+            <span>React</span>
+          </li>
           <li className="logocomp">
             <img
               src="../src/assets/icones/javascript.svg"
@@ -40,17 +36,17 @@ const Competences = () => {
             />
             <span>Javascript</span>
           </li>
+        </ul>
+        <ul>
+          <h2>Back-end</h2>
+          <li className="logocomp">
+            <img src="../src/assets/icones/symfony.svg" alt="Logo Symfony" />
+            <span>Symfony</span>
+          </li>
           <li className="logocomp">
             <img src="../src/assets/icones/php.svg" alt="Logo PHP" />
             <span>PHP</span>
           </li>
-          <li className="logocomp">
-            <img src="../src/assets/icones/sql.svg" alt="Logo SQL" />
-            <span>SQL</span>
-          </li>
-        </ul>
-        <ul>
-          <h2>Base de données</h2>
           <li className="logocomp">
             <img src="../src/assets/icones/mysql.svg" alt="Logo MySQL" />
             <span>MySQL</span>
@@ -68,7 +64,7 @@ const Competences = () => {
           </li>
         </ul>
         <ul>
-          <h2>Outils</h2>
+          <h2>Autre</h2>
           <li className="logocomp">
             <img src="../src/assets/icones/git.svg" alt="Logo GIT" />
             <span>Git</span>
@@ -81,13 +77,6 @@ const Competences = () => {
             <img src="../src/assets/icones/notion.svg" alt="Logo Notion" />
             <span>Notion</span>
           </li>
-          <li className="logocomp">
-            <img src="../src/assets/icones/figma.svg" alt="Logo Figma" />
-            <span>Figma</span>
-          </li>
-        </ul>
-        <ul>
-          <h2>Autre</h2>
           <li className="logocomp">
             <img src="../src/assets/icones/rgpd.svg" alt="Logo RGPD" />
             <span>Certification RGPD</span>

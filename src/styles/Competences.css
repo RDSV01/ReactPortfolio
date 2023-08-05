@@ -14,10 +14,12 @@
 }
 .typecompetences{
     display: flex;
-    gap: 45px;
+    gap: 60px;
+    width: 100%;
     flex-wrap: wrap;
     padding: 30px;
-    justify-content: center;
+    padding-top: 15px;
+    justify-content: space-evenly;
 }
 .typecompetences h2{
     color: white;
@@ -48,9 +50,11 @@
 @media (max-width: 720px) {
     .typecompetences{
         padding: 15px;
+        width: auto;
+        justify-content: center;
     }
     .typecompetences ul{
-        gap: 8px;
+        gap: 10px;
     }
 }
 @media (max-width: 490px) {

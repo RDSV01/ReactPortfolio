@@ -70,7 +70,7 @@
     background-clip: padding-box;
     border-radius: 28px;
     padding: 22px;
-    margin-top: 55px;
+    margin-top: 35px;
   }
   @media screen and (max-width: 720px) {
     .container-card-project {
@@ -151,7 +151,7 @@
     }
   }
   .card-project:hover {
-    animation: bounce 1s ease;
+    animation: bounce 1s ease-out;
   }
   @media screen and (max-width: 720px) {
     .card-project {
