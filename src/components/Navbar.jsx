@@ -21,11 +21,11 @@ const Navbar = () => {
           <a href="#projets">
             <li>Projets</li>
           </a>
+          <a href="#experiences">
+            <li>Experiences</li>
+          </a>
           <a href="#competences">
             <li>Compétences</li>
-          </a>
-          <a href="#">
-            <li>Experience</li>
           </a>
         </ul>
       </div>
@@ -58,19 +58,19 @@ const Navbar = () => {
           <li>
             <a
               className="menu__item"
-              href="#competences"
+              href="#experiences"
               onClick={handleLinkClick}
             >
-              Compétences
+              Experiences
             </a>
           </li>
           <li>
             <a
               className="menu__item"
-              href="#experience"
+              href="#competences"
               onClick={handleLinkClick}
             >
-              Experience
+              Compétences
             </a>
           </li>
         </ul>

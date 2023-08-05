@@ -4,7 +4,7 @@ import { Slide } from "react-awesome-reveal";
 
 const Experience = () => {
   return (
-    <div className="experience">
+    <div className="experience" id="experiences">
       <h1>Experiences</h1>
       <div class="timeline">
         <ul>
