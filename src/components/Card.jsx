@@ -75,7 +75,7 @@ const Card = () => {
         <Tilt tiltMaxAngleX={15} tiltMaxAngleY={15}>
           <div className="photoprofile">
             <img
-              src="../src/assets/img/pp.jpg"
+              src="../src/assets/img/pp.webp"
               alt="Photo de profile du site"
             />
           </div>
