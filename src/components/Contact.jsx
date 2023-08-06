@@ -1,12 +1,19 @@
-import React, { useRef } from "react";
+import React, { useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
 import "../styles/Contact.css";
+import Background from "./Background";
+import { Bounce } from "react-awesome-reveal";
 
 const Contact = () => {
   const form = useRef();
+  const [isSending, setIsSending] = useState(false);
+  const [isSent, setIsSent] = useState(false);
+  const [isError, setIsError] = useState(false);
 
   const sendEmail = (e) => {
     e.preventDefault();
+
+    setIsSending(true);
 
     emailjs
       .sendForm(
@@ -18,11 +25,22 @@ const Contact = () => {
       .then(
         (result) => {
           console.log(result.text);
+          setIsSending(false);
+          setIsSent(true);
+          setIsError(false);
+          form.current.reset();
         },
         (error) => {
           console.log(error.text);
+          setIsSending(false);
+          setIsSent(false);
+          setIsError(true);
         }
       );
+  };
+  const closeErrorMessage = () => {
+    setIsError(false);
+    setIsSent(false);
   };
 
   return (
@@ -38,10 +56,10 @@ const Contact = () => {
               viewBox="0 0 24 24"
               fill="none"
               stroke="currentColor"
-              stroke-width="2"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              class="lucide lucide-pin"
+              strokeWidth="2"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              className="lucide lucide-pin"
             >
               <line x1="12" x2="12" y1="17" y2="22" />
               <path d="M5 17h14v-1.76a2 2 0 0 0-1.11-1.79l-1.78-.9A2 2 0 0 1 15 10.76V6h1a2 2 0 0 0 0-4H8a2 2 0 0 0 0 4h1v4.76a2 2 0 0 1-1.11 1.79l-1.78.9A2 2 0 0 0 5 15.24Z" />
@@ -56,10 +74,10 @@ const Contact = () => {
               viewBox="0 0 24 24"
               fill="none"
               stroke="currentColor"
-              stroke-width="2"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              class="lucide lucide-mail"
+              strokeWidth="2"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              className="lucide lucide-mail"
             >
               <rect width="20" height="16" x="2" y="4" rx="2" />
               <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7" />
@@ -74,10 +92,10 @@ const Contact = () => {
               viewBox="0 0 24 24"
               fill="none"
               stroke="currentColor"
-              stroke-width="2"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              class="lucide lucide-linkedin"
+              strokeWidth="2"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              className="lucide lucide-linkedin"
             >
               <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z" />
               <rect width="4" height="12" x="2" y="9" />
@@ -93,65 +111,115 @@ const Contact = () => {
         </div>
         <div className="formulaire">
           <h3>Formulaire de contact</h3>
+
           <div className="nomprenom">
-            <div class="form__group field">
+            <div className="form__group field">
               <input
                 type="input"
-                class="form__field"
+                className="form__field"
                 placeholder="Prenom"
                 name="user_firstname"
                 id="firstname"
                 required
+                maxLength={40}
               />
-              <label for="from_firstname" class="form__label">
+              <label htmlFor="from_firstname" className="form__label">
                 Prénom
               </label>
             </div>
-            <div class="form__group field">
+            <div className="form__group field">
               <input
                 type="input"
-                class="form__field"
+                className="form__field"
                 placeholder="Nom"
                 name="user_lastname"
                 id="lastname"
                 required
+                maxLength={40}
               />
-              <label for="from_lastname" class="form__label">
+              <label htmlFor="from_lastname" className="form__label">
                 Nom
               </label>
             </div>
           </div>
 
-          <div class="form__group field">
+          <div className="form__group field">
             <input
               type="input"
-              class="form__field"
+              className="form__field"
               placeholder="Email"
               name="user_email"
               id="email"
               required
+              maxLength={50}
             />
-            <label for="from_email" class="form__label">
+            <label htmlFor="from_email" className="form__label">
               Email
             </label>
           </div>
           <div className="form__group field">
             <textarea
-              class="form__field"
+              className="form__field"
               placeholder="Message"
               name="message"
               id="message"
               required
               rows={8}
+              maxLength={2000}
             />
-            <label for="message" class="form__label">
+            <label htmlFor="message" className="form__label">
               Message
             </label>
           </div>
-
+          {isSent && (
+            <Bounce>
+              <div className="msginfo envoye">
+                <p>Votre message à bien été envoyé.</p>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  strokeWidth="2"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  className="lucide lucide-x"
+                  onClick={closeErrorMessage}
+                >
+                  <path d="M18 6 6 18" />
+                  <path d="m6 6 12 12" />
+                </svg>
+              </div>
+            </Bounce>
+          )}
+          {isError && (
+            <Bounce>
+              <div className="msginfo erreur">
+                <p>Une erreur est survenue. Veuillez réessayer.</p>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  strokeWidth="2"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  className="lucide lucide-x"
+                  onClick={closeErrorMessage}
+                >
+                  <path d="M18 6 6 18" />
+                  <path d="m6 6 12 12" />
+                </svg>
+              </div>
+            </Bounce>
+          )}
           <button className="btnForm">
-            <div class="svg-wrapper-1">
-              <div class="svg-wrapper">
+            <div className="svg-wrapper-1">
+              <div className="svg-wrapper">
                 <svg
                   height="24"
                   width="24"
@@ -166,7 +234,7 @@ const Contact = () => {
                 </svg>
               </div>
             </div>
-            <span>Envoyer</span>
+            <span>{isSending ? "Envoi en cours..." : "Envoyer"}</span>
           </button>
         </div>
       </form>

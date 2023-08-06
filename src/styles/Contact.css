@@ -1,6 +1,7 @@
 textarea {
     resize:vertical;
     min-height: 150px;
+    max-height: 400px;
 
    }
 .contact{
@@ -155,6 +156,28 @@ textarea {
   .btnForm:active {
     transform: scale(0.95);
   }
+  .msginfo {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    border-radius: 16px;
+    margin-bottom: -8px;
+}
+.msginfo.envoye{
+    background-color: #2ecc71;
+}
+.msginfo.erreur{
+    background-color: #e74c3c;
+}
+.msginfo p{
+    margin: 0;
+    color: white;
+}
+.msginfo svg{
+    cursor: pointer;
+    color: #fff;
+}
   
   @keyframes fly-1 {
     from {
