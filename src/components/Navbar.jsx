@@ -27,6 +27,9 @@ const Navbar = () => {
           <a href="#competences">
             <li>Compétences</li>
           </a>
+          <a href="#contact">
+            <li>Contact</li>
+          </a>
         </ul>
       </div>
       <div className="hamburger-menu">
@@ -71,6 +74,11 @@ const Navbar = () => {
               onClick={handleLinkClick}
             >
               Compétences
+            </a>
+          </li>
+          <li>
+            <a className="menu__item" href="#contact" onClick={handleLinkClick}>
+              Contact
             </a>
           </li>
         </ul>

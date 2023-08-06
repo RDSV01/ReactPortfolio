@@ -56,7 +56,8 @@ const Projets = () => {
           </div>
         </div>
         <h2>
-          Et d'autres projets ! N'hésitez pas à me contacter pour + d'infos.
+          Et d'autres projets ! N'hésitez pas à{" "}
+          <a href="#contact">me contacter</a> pour + d'infos.
         </h2>
       </div>
     </div>

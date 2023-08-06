@@ -7,6 +7,10 @@
     margin-right: auto;
     margin-left: auto;
   }
+  .container a{
+    color: white;
+    text-decoration: underline;
+  }
   .container h2{
     color: white;
     text-align: center;

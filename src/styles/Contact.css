@@ -1,0 +1,180 @@
+textarea {
+    resize:vertical;
+    min-height: 150px;
+
+   }
+.contact{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 70px;
+    margin-bottom: 100px;
+}
+.contact h2{
+    color: white;
+    letter-spacing: 3px;
+    font-size: 38px;
+    margin-bottom: 0;
+    text-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.contact form{
+    display: flex;
+    flex-direction: row;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: space-evenly;
+    gap: 50px;
+    padding: 25px;
+}
+.reseaux{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.reseaux p{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: #fff;
+}
+.reseaux a{
+    color: white;
+    text-decoration: underline;
+}
+.nomprenom{
+    display: flex;
+    gap: 30px;
+}
+.formulaire{
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    width: 420px;
+}  
+.formulaire h3{
+    text-align: center;
+    color: #fff;
+    font-size: 22px;
+    margin: 0;
+    text-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+   .form__group {
+    display: flex;
+    position: relative;
+    padding: 15px 0 0;
+    margin-top: 10px;
+    
+  }
+  
+  .form__field {
+    font-family: inherit;
+    width: 100%;
+    border: 0;
+    border-radius: 12px;
+    outline: 0;
+    font-size: 16px;
+    color: #fff;
+    padding: 10px ;
+    background: #12121299;
+    transition: border-color 0.2s;
+  }
+  .form__field::placeholder {
+    color: transparent;
+  }
+  .form__field:placeholder-shown ~ .form__label {
+    font-size: 16px;
+    cursor: text;
+    top: 24.5px;
+  }
+  
+  .form__label {
+    position: absolute;
+    top: -10px;
+    left: 8px;
+    display: block;
+    transition: 0.2s;
+    font-size: 16px;
+    color: #ffffff;
+  }
+  .form__field:focus ~ .form__label {
+    position: absolute;
+    top: -10px;
+    display: block;
+    transition: 0.2s;
+    font-size: 16px;
+    color: #ffffff;
+  }
+  
+  /* reset input */
+  .form__field:required, .form__field:invalid {
+    box-shadow: none;
+  }
+   
+   
+   
+  .btnForm{
+    font-family: inherit;
+    font-size: 18px;
+    background: royalblue;
+    color: white;
+    padding: 8px;
+    padding-left: 0.9em;
+    display: flex;
+    align-items: center;
+    border: none;
+    border-radius: 16px;
+    overflow: hidden;
+    transition: all 0.2s;
+  }
+  
+ .btnForm span {
+    display: block;
+    margin-left: 0.3em;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .btnForm svg {
+    display: block;
+    transform-origin: center center;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .btnForm:hover .svg-wrapper {
+    animation: fly-1 0.6s ease-in-out infinite alternate;
+  }
+  
+  .btnForm:hover svg {
+    transform: translateX(1.2em) rotate(45deg) scale(1.1);
+  }
+  
+  .btnForm:hover span {
+    transform: translateX(5em);
+  }
+  
+  .btnForm:active {
+    transform: scale(0.95);
+  }
+  
+  @keyframes fly-1 {
+    from {
+      transform: translateY(0.1em);
+    }
+  
+    to {
+      transform: translateY(-0.1em);
+    }
+  }
+  
+  @media (max-width: 720px) {
+    .contact form{
+        flex-direction: column;
+        align-items: center;
+    }
+  }
+  @media (max-width: 490px) {
+    .formulaire{
+        width: 100%;
+    }
+  }
+  

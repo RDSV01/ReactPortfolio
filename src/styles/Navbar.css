@@ -21,7 +21,7 @@
   .navbar ul{
     display: flex;
     flex-direction: row;
-    gap: 15px;
+    gap: 18px;
     margin-left: 0;
     padding: 0;
     margin: 10px 12px 10px 12px;

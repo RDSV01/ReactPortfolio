@@ -27,6 +27,23 @@ body::-webkit-scrollbar-thumb {
 body::-webkit-scrollbar-button {
   display:none;
 }
+
+textarea::-webkit-scrollbar {
+  background-color: transparent;
+  width: 8px;
+}
+textarea::-webkit-scrollbar-track {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  background-color: transparent;
+}
+textarea::-webkit-scrollbar-thumb {
+  background-color: #babac0;
+  border-radius: 16px;
+}
+textarea::-webkit-scrollbar-button {
+  display:none;
+}
 a{
   text-decoration: none;
 }
