@@ -1,0 +1,18 @@
+
+.footer{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #222;
+}
+.footer p{
+    color: rgb(196, 196, 196);
+    font-size: 14px;
+    margin: 10px;
+}
+.footer a{
+    color: rgb(196, 196, 196);
+    font-size: 14px;
+    margin: 10px;
+    text-decoration: underline;
+}

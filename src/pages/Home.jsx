@@ -1,4 +1,3 @@
-import React from "react";
 import Navbar from "../components/Navbar";
 import Background from "../components/Background";
 import Card from "../components/Card";
@@ -6,6 +5,7 @@ import Competences from "../components/Competences";
 import Projets from "../components/Projets";
 import Experience from "../components/Experience";
 import Contact from "../components/Contact";
+import Footer from "../components/Footer";
 
 const Home = () => {
   return (
@@ -17,6 +17,7 @@ const Home = () => {
       <Experience />
       <Competences />
       <Contact />
+      <Footer />
     </div>
   );
 };
