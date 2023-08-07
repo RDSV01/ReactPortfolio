@@ -1,7 +1,6 @@
-import React, { useRef, useState } from "react";
+import React, { useRef, useState, useEffect } from "react";
 import emailjs from "@emailjs/browser";
 import "../styles/Contact.css";
-import Background from "./Background";
 import { Bounce } from "react-awesome-reveal";
 
 const Contact = () => {
@@ -9,9 +8,19 @@ const Contact = () => {
   const [isSending, setIsSending] = useState(false);
   const [isSent, setIsSent] = useState(false);
   const [isError, setIsError] = useState(false);
+  const [isCheckboxChecked, setIsCheckboxChecked] = useState(false);
+
+  const handleCheckboxChange = (e) => {
+    setIsCheckboxChecked(e.target.checked);
+  };
 
   const sendEmail = (e) => {
     e.preventDefault();
+
+    if (!isCheckboxChecked) {
+      setIsError(true);
+      return;
+    }
 
     setIsSending(true);
 
@@ -29,6 +38,7 @@ const Contact = () => {
           setIsSent(true);
           setIsError(false);
           form.current.reset();
+          setIsCheckboxChecked(false);
         },
         (error) => {
           console.log(error.text);
@@ -42,7 +52,15 @@ const Contact = () => {
     setIsError(false);
     setIsSent(false);
   };
+  useEffect(() => {
+    if (isSent || isError) {
+      const timeout = setTimeout(() => {
+        closeErrorMessage();
+      }, 15000);
 
+      return () => clearTimeout(timeout);
+    }
+  }, [isSent, isError]);
   return (
     <div className="contact" id="contact">
       <h2>Contact</h2>
@@ -171,6 +189,27 @@ const Contact = () => {
               Message
             </label>
           </div>
+          <div className="rgpd">
+            <input
+              type="checkbox"
+              id="cbx"
+              name="test"
+              checked={isCheckboxChecked}
+              onChange={handleCheckboxChange}
+            />
+            <label htmlFor="cbx" className="check">
+              <svg width="18px" height="18px" viewBox="0 0 18 18">
+                <path d="M1,9 L1,3.5 C1,2 2,1 3.5,1 L14.5,1 C16,1 17,2 17,3.5 L17,14.5 C17,16 16,17 14.5,17 L3.5,17 C2,17 1,16 1,14.5 L1,9 Z"></path>
+                <polyline points="1 9 7 14 15 4"></polyline>
+              </svg>
+            </label>
+            <label>
+              En cochant cette case j'accepte la{" "}
+              <a target="_blank" href="/donnees-personnelles">
+                politique de protection des donnees personnelles.
+              </a>
+            </label>
+          </div>
           {isSent && (
             <Bounce>
               <div className="msginfo envoye">
@@ -197,7 +236,11 @@ const Contact = () => {
           {isError && (
             <Bounce>
               <div className="msginfo erreur">
-                <p>Une erreur est survenue. Veuillez réessayer.</p>
+                <p>
+                  {!isCheckboxChecked
+                    ? "Veuillez accepter la politique de protection des données personnelles pour continuer."
+                    : "Une erreur est survenue. Veuillez réessayer."}
+                </p>
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="24"
@@ -234,6 +277,7 @@ const Contact = () => {
                 </svg>
               </div>
             </div>
+
             <span>{isSending ? "Envoi en cours..." : "Envoyer"}</span>
           </button>
         </div>

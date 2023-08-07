@@ -50,7 +50,7 @@ textarea {
 .formulaire{
     display: flex;
     flex-direction: column;
-    gap: 12px;
+    gap: 8px;
     width: 420px;
 }  
 .formulaire h3{
@@ -85,9 +85,9 @@ textarea {
     color: transparent;
   }
   .form__field:placeholder-shown ~ .form__label {
-    font-size: 16px;
+    font-size: 14px;
     cursor: text;
-    top: 24.5px;
+    top: 26.5px;
   }
   
   .form__label {
@@ -96,7 +96,7 @@ textarea {
     left: 8px;
     display: block;
     transition: 0.2s;
-    font-size: 16px;
+    font-size: 14px;
     color: #ffffff;
   }
   .form__field:focus ~ .form__label {
@@ -104,7 +104,7 @@ textarea {
     top: -10px;
     display: block;
     transition: 0.2s;
-    font-size: 16px;
+    font-size: 14px;
     color: #ffffff;
   }
   
@@ -174,11 +174,14 @@ textarea {
 .msginfo p{
     margin: 0;
     color: white;
+    font-size: 14px;
 }
 .msginfo svg{
     cursor: pointer;
     color: #fff;
-}
+    min-width: 22px;
+    max-width: 22px;
+  }
   
   @keyframes fly-1 {
     from {
@@ -189,6 +192,89 @@ textarea {
       transform: translateY(-0.1em);
     }
   }
+  .check {
+    cursor: pointer;
+    position: relative;
+    margin: auto;
+    width: 18px;
+    height: 18px;
+    -webkit-tap-highlight-color: transparent;
+    transform: translate3d(0, 0, 0);
+  }
+  
+  .check:before {
+    content: "";
+    position: absolute;
+    top: -15px;
+    left: -15px;
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    background: rgba(34,50,84,0.03);
+    opacity: 0;
+    transition: opacity 0.2s ease;
+  }
+  
+  .check svg {
+    position: relative;
+    z-index: 1;
+    fill: none;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    stroke: #c8ccd4;
+    stroke-width: 1.5;
+    transform: translate3d(0, 0, 0);
+    transition: all 0.2s ease;
+  }
+  
+  .check svg path {
+    stroke-dasharray: 60;
+    stroke-dashoffset: 0;
+  }
+  
+  .check svg polyline {
+    stroke-dasharray: 22;
+    stroke-dashoffset: 66;
+  }
+  
+  .check:hover:before {
+    opacity: 1;
+  }
+  
+  .check:hover svg {
+    stroke: #ffffff;
+  }
+  #cbx{
+    display: none;
+  }
+  
+  #cbx:checked + .check svg {
+    stroke: #ffffff;
+  }
+  
+  #cbx:checked + .check svg path {
+    stroke-dashoffset: 60;
+    transition: all 0.3s linear;
+  }
+  
+  #cbx:checked + .check svg polyline {
+    stroke-dashoffset: 42;
+    transition: all 0.2s linear;
+    transition-delay: 0.15s;
+  }
+  .rgpd{
+    display: flex;
+    gap: 12px;
+  }
+  .rgpd label{
+    color: white;
+    font-size: 14px;
+  }
+  .rgpd a{
+    color: white;
+    text-decoration: underline;
+  }
+  
   
   @media (max-width: 720px) {
     .contact form{
