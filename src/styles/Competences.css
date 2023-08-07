@@ -18,7 +18,6 @@
     width: 100%;
     flex-wrap: wrap;
     padding: 30px;
-    padding-top: 15px;
     justify-content: space-evenly;
 }
 .typecompetences h2{
@@ -55,6 +54,9 @@
     }
     .typecompetences ul{
         gap: 10px;
+    }
+    .compcontainer{
+        margin-top: 22px;
     }
 }
 @media (max-width: 490px) {

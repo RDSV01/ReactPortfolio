@@ -15,21 +15,25 @@ const Navbar = () => {
     <div className="navigation">
       <div className="navbar">
         <ul>
-          <a href="#">
-            <li>Accueil</li>
-          </a>
-          <a href="#projets">
-            <li>Projets</li>
-          </a>
-          <a href="#experiences">
-            <li>Experiences</li>
-          </a>
-          <a href="#competences">
-            <li>Compétences</li>
-          </a>
-          <a href="#contact">
-            <li>Contact</li>
-          </a>
+          <li>
+            <a href="#">Accueil</a>
+          </li>
+
+          <li>
+            <a href="#projets">Projets</a>
+          </li>
+
+          <li>
+            <a href="#experiences">Experiences</a>
+          </li>
+
+          <li>
+            <a href="#competences">Compétences</a>
+          </li>
+
+          <li>
+            <a href="#contact">Contact</a>
+          </li>
         </ul>
       </div>
       <div className="hamburger-menu">
@@ -38,6 +42,7 @@ const Navbar = () => {
           type="checkbox"
           checked={isChecked}
           onChange={() => setIsChecked(!isChecked)}
+          aria-label="Icone burger de navigation"
         />
         <label
           className="menu__btn"

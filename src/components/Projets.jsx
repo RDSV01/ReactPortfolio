@@ -1,7 +1,6 @@
 import React from "react";
 import "../styles/Projets.css";
 import { Fade } from "react-awesome-reveal";
-import Tilt from "react-parallax-tilt";
 
 const Projets = () => {
   return (
@@ -13,7 +12,7 @@ const Projets = () => {
           <div className="card-project">
             <Fade>
               <div className="container-card-project bg-blue-box">
-                <img src="./assets/img/Cursella_1.webp" alt="" />
+                <img src="./assets/img/Cursella_1_2.webp" alt="" />
                 <p className="card-project-title">Cursella</p>
                 <p className="card-project-description">
                   Site web de location de biens saisonniers.
@@ -29,7 +28,7 @@ const Projets = () => {
           <div className="card-project">
             <Fade>
               <div className="container-card-project bg-blue-box">
-                <img src="./assets/img/WfiProd.webp" alt="" />
+                <img src="./assets/img/WfiProd_2.webp" alt="" />
                 <p className="card-project-title">WfiProd</p>
                 <p className="card-project-description">
                   Portfolio d'un vidéaste/photographe.
@@ -43,7 +42,7 @@ const Projets = () => {
           <div className="card-project">
             <Fade>
               <div className="container-card-project bg-blue-box">
-                <img src="./assets/img/3ds_faq.webp" alt="" />
+                <img src="./assets/img/3ds_faq_2.webp" alt="" />
                 <p className="card-project-title">3D Dental Store</p>
                 <p className="card-project-description">
                   Système de FAQ sur le site 3D Dental Store.

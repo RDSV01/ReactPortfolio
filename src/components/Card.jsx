@@ -106,7 +106,7 @@ const Card = () => {
       <Slide direction="right" duration={800} triggerOnce>
         <Tilt tiltMaxAngleX={15} tiltMaxAngleY={15}>
           <div className="photoprofile">
-            <img src="./assets/img/pp.webp" alt="Photo de profile du site" />
+            <img src="./assets/img/pp2.webp" alt="Photo de profile du site" />
           </div>
         </Tilt>
       </Slide>

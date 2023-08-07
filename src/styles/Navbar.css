@@ -17,6 +17,12 @@
   }
   .navbar a{
     text-decoration: none;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    list-style: none;
+    font-size: 18px;
+    font-family: Poppins;
+    font-weight: 600;
   }
   .navbar ul{
     display: flex;
@@ -27,12 +33,7 @@
     margin: 10px 12px 10px 12px;
   }
   .navbar li{
-    color: rgb(255, 255, 255);
-    text-decoration: none;
     list-style: none;
-    font-size: 18px;
-    font-family: Poppins;
-    font-weight: 600;
   }
   #menu__toggle {
     opacity: 0;

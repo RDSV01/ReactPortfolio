@@ -1,6 +1,7 @@
 @font-face {
   font-family: "Poppins";
-  src: local("Poppins"), url("./assets/font/Poppins-Regular.ttf");
+  src: local("Poppins"), url("/assets/font/Poppins-Regular.ttf");
+  font-display: fallback ;
 }
 :root{
   background-color: #222 ;
