@@ -29,7 +29,7 @@ code b {
   font-weight: 500;
 }
 
-a {
+.page404 a {
   color: #8abeb7;
   font-family: monospace;
   font-size: 26px;
@@ -39,7 +39,7 @@ a {
 }
 
 @media screen and (max-width: 880px) {
-  p {
+  .page4004 p {
     font-size: 14vw;
   }
 }

@@ -1,6 +1,6 @@
 import React from "react";
 import "../styles/Experience.css";
-import { Zoom } from "react-awesome-reveal";
+import { Fade } from "react-awesome-reveal";
 
 const Experience = () => {
   return (
@@ -9,7 +9,7 @@ const Experience = () => {
       <div className="timeline">
         <ul>
           <li>
-            <Zoom triggerOnce>
+            <Fade triggerOnce>
               <div className="content">
                 <h3>3D Dental Store</h3>
                 <span>2022 - 2023</span>
@@ -22,10 +22,10 @@ const Experience = () => {
                   <br></br>- Growth-hacking (stratégies de croissance)<br></br>
                 </p>
               </div>
-            </Zoom>
+            </Fade>
           </li>
           <li>
-            <Zoom triggerOnce>
+            <Fade triggerOnce>
               <div className="content">
                 <h3>Neoma Coding School</h3>
                 <span>2022</span>
@@ -34,10 +34,10 @@ const Experience = () => {
                   site web de locations de biens saisonniers
                 </p>
               </div>
-            </Zoom>
+            </Fade>
           </li>
           <li>
-            <Zoom triggerOnce>
+            <Fade triggerOnce>
               <div className="content">
                 <h3>WebRocket</h3>
                 <span>2021</span>
@@ -46,7 +46,7 @@ const Experience = () => {
                   Symfony
                 </p>
               </div>
-            </Zoom>
+            </Fade>
           </li>
         </ul>
       </div>
