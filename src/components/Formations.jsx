@@ -4,27 +4,27 @@ import "../styles/Formations.css";
 const Formations = () => {
   return (
     <div className="formations" id="formations">
-      <h2>Formations / Certifications</h2>
+      <h2>Formations/Certifications</h2>
       <div className="groupformations">
         <div className="containerformations">
-          <h3>Licence Inforamtique</h3>
+          <h3>Licence Informatique</h3>
           <span>2022 - 2023</span>
-          <p>Campus la chataigneraie</p>
+          <p>Campus La Châtaigneraie</p>
           <ul>
             <li>Gestion de projets</li>
             <li>Programmation</li>
-            <li>Cybersecurité</li>
+            <li>Cybersécurité</li>
             <li>Réseau</li>
           </ul>
         </div>
         <div className="containerformations">
           <h3>BTS SIO</h3>
           <span>2020 - 2022</span>
-          <p>Campus la chataigneraie</p>
+          <p>Campus La Châtaigneraie</p>
           <ul>
             <li>Développement Web</li>
-            <li>Développement Applicattif</li>
-            <li>Cybersecurité</li>
+            <li>Développement Applicatif</li>
+            <li>Cybersécurité</li>
             <li>Réseau</li>
           </ul>
         </div>
@@ -34,7 +34,7 @@ const Formations = () => {
 
           <ul>
             <li>
-              Certification relative au Règlement Géneral sur la Protection des
+              Certification relative au Règlement Général sur la Protection des
               Données
             </li>
           </ul>
@@ -45,7 +45,7 @@ const Formations = () => {
 
           <ul>
             <li>
-              Certification relative a l'Agence Nationale de la Sécurité des
+              Certification relative à l'Agence Nationale de la Sécurité des
               Systèmes d'Information
             </li>
           </ul>

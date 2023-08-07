@@ -204,9 +204,9 @@ const Contact = () => {
               </svg>
             </label>
             <label>
-              En cochant cette case j'accepte la{" "}
+              En cochant cette case, j'accepte la{" "}
               <a target="_blank" href="/donnees-personnelles">
-                politique de protection des donnees personnelles.
+                politique de protection des données personnelles.
               </a>
             </label>
           </div>
