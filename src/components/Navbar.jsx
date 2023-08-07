@@ -18,19 +18,18 @@ const Navbar = () => {
           <li>
             <a href="#">Accueil</a>
           </li>
-
           <li>
             <a href="#projets">Projets</a>
           </li>
-
           <li>
             <a href="#experiences">Experiences</a>
           </li>
-
+          <li>
+            <a href="#formations">Formations</a>
+          </li>
           <li>
             <a href="#competences">Compétences</a>
           </li>
-
           <li>
             <a href="#contact">Contact</a>
           </li>
@@ -70,6 +69,15 @@ const Navbar = () => {
               onClick={handleLinkClick}
             >
               Experiences
+            </a>
+          </li>
+          <li>
+            <a
+              className="menu__item"
+              href="#formations"
+              onClick={handleLinkClick}
+            >
+              Formations
             </a>
           </li>
           <li>

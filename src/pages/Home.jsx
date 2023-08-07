@@ -6,6 +6,7 @@ import Projets from "../components/Projets";
 import Experience from "../components/Experience";
 import Contact from "../components/Contact";
 import Footer from "../components/Footer";
+import Formations from "../components/Formations";
 
 const Home = () => {
   return (
@@ -15,6 +16,7 @@ const Home = () => {
       <Card />
       <Projets />
       <Experience />
+      <Formations />
       <Competences />
       <Contact />
       <Footer />

@@ -158,7 +158,7 @@
     animation: bounce 1s ease-out;
   }
   @media screen and (max-width: 720px) {
-    .card-project {
+    .card-project:hover {
       animation: none;
     }
   }
