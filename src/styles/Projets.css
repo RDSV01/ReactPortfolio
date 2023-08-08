@@ -14,7 +14,7 @@
   .container h2{
     color: white;
     text-align: center;
-    margin-top: 35px;
+    margin-top: 45px;
     text-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
   }
   @media screen and (min-width: 992px) and (max-width: 1439px) {
@@ -123,8 +123,8 @@
   .card-project-description {
     font-weight: 600;
     line-height: 32px;
-    color: rgba(255, 255, 255, 0.5);
-    font-size: 16px;
+    color: rgba(255, 255, 255, 0.70);
+    font-size: 15px;
     max-width: 470px;
     margin-top: 0;
     margin-bottom: 0;

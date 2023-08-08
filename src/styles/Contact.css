@@ -28,6 +28,10 @@ textarea {
     gap: 50px;
     padding: 25px;
 }
+.formfade{
+  display: flex;
+  align-items: center;
+}
 .reseaux{
     display: flex;
     flex-direction: column;
@@ -78,7 +82,7 @@ textarea {
     font-size: 16px;
     color: #fff;
     padding: 10px ;
-    background: #12121299;
+    background: #12121290;
     transition: border-color 0.2s;
   }
   .form__field::placeholder {
@@ -88,6 +92,7 @@ textarea {
     font-size: 14px;
     cursor: text;
     top: 26.5px;
+    z-index: -1;
   }
   
   .form__label {
