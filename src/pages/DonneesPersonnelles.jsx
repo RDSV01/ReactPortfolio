@@ -55,15 +55,15 @@ const DonneesPersonnelles = () => {
         <strong>Propriétaire</strong> : Da Silva Raphaël – 76240 Le Mesnil
         Esnard <br></br>
         <strong>Responsable publication</strong> : Da Silva Raphaël –
-        raphds76@gmail.com <br></br>
+        contact@raphds.fr <br></br>
         Le responsable publication est une personne physique ou une personne
         morale. <br></br>
-        <strong>Webmaster</strong> : Da Silva Raphaël – raphds76@gmail.com{" "}
+        <strong>Webmaster</strong> : Da Silva Raphaël – contact@raphds.fr{" "}
         <br></br>
         <strong>Hébergeur</strong> : ovh – 2 rue Kellermann 59100 Roubaix 1007{" "}
         <br></br>
         <strong>Délégué à la protection des données</strong> : Da Silva Raphaël
-        – raphds76@gmail.com <br></br>
+        – contact@raphds.fr <br></br>
       </p>
       <div ng-bind-html="linkHTML">
         <p>
