@@ -5,7 +5,7 @@ import { Fade } from "react-awesome-reveal";
 const Formations = () => {
   return (
     <div className="formations" id="formations">
-      <h2>Formations/Certifications</h2>
+      <h2>Formations & Certifications</h2>
       <Fade>
         <div className="groupformations">
           <div className="containerformations">

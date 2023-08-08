@@ -12,6 +12,7 @@ const Contact = () => {
 
   const handleCheckboxChange = (e) => {
     setIsCheckboxChecked(e.target.checked);
+    setIsError(false);
   };
 
   const sendEmail = (e) => {
