@@ -9,7 +9,7 @@ const Card = () => {
     <div className="card">
       <Slide duration={800} triggerOnce>
         <div className="texte">
-          <p>Bienvenu ! Je suis</p>
+          <p>Bienvenue ! Je suis</p>
           <h1>
             Raphaël <span>Da Silva</span>
           </h1>
