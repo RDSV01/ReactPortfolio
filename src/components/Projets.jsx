@@ -1,5 +1,4 @@
 import "../styles/Projets.css";
-import { Fade } from "react-awesome-reveal";
 import Marquee from "react-fast-marquee";
 
 const Projets = () => {
