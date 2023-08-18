@@ -1,164 +1,165 @@
-  .projets{
-    padding-top: 100px;
-  }
-  .container {
-    width: 1200px !important;
-    padding: 0 !important;
-    margin-right: auto;
-    margin-left: auto;
-  }
-  .container a{
-    color: white;
-    text-decoration: underline;
-  }
-  .container h2{
-    color: white;
-    text-align: center;
-    margin-top: 45px;
-    text-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-  }
-  @media screen and (min-width: 992px) and (max-width: 1439px) {
-    .container {
+.projets {
+  padding-top: 100px;
+}
+.container {
+  width: 100% !important;
+  padding: 0 !important;
+  margin-right: auto;
+  margin-left: auto;
+}
+.container a {
+  color: white;
+  text-decoration: underline;
+}
+.container h2 {
+  color: white;
+  text-align: center;
+  margin-top: 45px;
+  text-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+@media screen and (min-width: 992px) and (max-width: 1439px) {
+  /* .container {
       max-width: 1279px !important;
       padding: 0 !important;
       margin: 0 80px !important;
       width: auto !important;
-    }
+    } */
+}
+@media screen and (max-width: 991px) {
+  .container {
+    max-width: 959px !important;
+    margin: 0 16px !important;
+    padding: 0 !important;
+    width: auto !important;
   }
-  @media screen and (max-width: 991px) {
-    .container {
-      max-width: 959px !important;
-      margin: 0 16px !important;
-      padding: 0 !important;
-      width: auto !important;
-    }
-  }
-  
+}
+
+.gradient-card-projects {
+  display: flex;
+}
+@media screen and (max-width: 991px) {
   .gradient-card-projects {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 28px;
+    grid-template-columns: repeat(2, 1fr);
   }
-  @media screen and (max-width: 991px) {
-    .gradient-card-projects {
-      grid-template-columns: repeat(2, 1fr) ;
-    }
+}
+@media screen and (max-width: 720px) {
+  .gradient-card-projects {
+    grid-template-columns: 1fr;
+    gap: 0;
   }
-  @media screen and (max-width: 720px) {
-    .gradient-card-projects {
-      grid-template-columns: 1fr ;
-      gap: 0;
-    }
-  }
-  
-  .container-title {
-    text-align: center;
-    color: white;
-    letter-spacing: 3px;
-    font-size: 38px;
-    margin-bottom: 0;
-    font-weight: 600;
-    text-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-  }
-  
-  .card-project {
-    max-width: 550px;
-    border: 0;
-    width: 100%;
-    margin-inline: auto;
-  }
-  
+}
+
+.container-title {
+  text-align: center;
+  color: white;
+  letter-spacing: 3px;
+  font-size: 38px;
+  margin-bottom: 0;
+  font-weight: 600;
+  text-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.card-project {
+  max-width: 380px;
+  border: 0;
+  width: 100%;
+  margin: 20px;
+}
+
+.container-card-project {
+  position: relative;
+  background-color: #12121299;
+  background-clip: padding-box;
+  border-radius: 28px;
+  padding: 22px;
+  margin-top: 35px;
+}
+@media screen and (max-width: 720px) {
   .container-card-project {
-    position: relative;
-    background-color: #12121299;
-    background-clip: padding-box;
-    border-radius: 28px;
-    padding: 22px;
-    margin-top: 35px;
+    margin-top: 25px;
   }
-  @media screen and (max-width: 720px) {
-    .container-card-project {
-      margin-top: 25px;
-    }
+}
+.container-card-project img {
+  width: 100%;
+  border-radius: 12px;
+}
+
+.bg-green-box,
+.bg-white-box,
+.bg-yellow-box,
+.bg-blue-box {
+  position: relative;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.bg-green-box::after,
+.bg-white-box::after,
+.bg-yellow-box::after,
+.bg-blue-box::after {
+  position: absolute;
+  top: -1px;
+  bottom: -1px;
+  left: -1px;
+  right: -1px;
+  content: "";
+  z-index: -1;
+  border-radius: 28px;
+}
+
+.card-project-title {
+  font-weight: 600;
+  color: white;
+  letter-spacing: -0.02em;
+  line-height: 40px;
+  font-style: normal;
+  font-size: 28px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+.card-project-description {
+  font-weight: 600;
+  line-height: 32px;
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 15px;
+  max-width: 470px;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+.badge-techno-projet {
+  display: flex;
+  gap: 8px;
+}
+.badge-techno-projet p {
+  color: #b0afb0;
+  border: solid 2px #5f6fad;
+  border-radius: 20px;
+  padding: 4px;
+  padding-left: 8px;
+  padding-right: 8px;
+  margin-bottom: 0;
+  font-size: 14px;
+}
+@keyframes bounce {
+  0%,
+  20%,
+  50%,
+  80%,
+  100% {
+    transform: rotate(0);
   }
-  .container-card-project img {
-    width: 100%;
-    border-radius: 12px;
+  40% {
+    transform: rotate(-2deg);
   }
-  
-  .bg-green-box,
-  .bg-white-box,
-  .bg-yellow-box,
-  .bg-blue-box {
-    position: relative;
-    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  60% {
+    transform: rotate(-1deg);
   }
-  
-  .bg-green-box::after,
-  .bg-white-box::after,
-  .bg-yellow-box::after,
-  .bg-blue-box::after {
-    position: absolute;
-    top: -1px;
-    bottom: -1px;
-    left: -1px;
-    right: -1px;
-    content: "";
-    z-index: -1;
-    border-radius: 28px;
-  }
-  
-  
-  .card-project-title {
-    font-weight: 600;
-    color: white;
-    letter-spacing: -0.02em;
-    line-height: 40px;
-    font-style: normal;
-    font-size: 28px;
-    margin-top: 0px;
-    margin-bottom: 0px;
-  }
-  
-  .card-project-description {
-    font-weight: 600;
-    line-height: 32px;
-    color: rgba(255, 255, 255, 0.70);
-    font-size: 15px;
-    max-width: 470px;
-    margin-top: 0;
-    margin-bottom: 0;
-  }
-  .badge-techno-projet{
-    display: flex;
-    gap: 8px;
-  }
-  .badge-techno-projet p{
-    color: #b0afb0;
-    border: solid 2px #5f6fad;
-    border-radius: 20px;
-    padding: 4px;
-    padding-left: 8px;
-    padding-right: 8px;
-    margin-bottom: 0;
-    font-size: 14px;
-  }
-  @keyframes bounce {
-    0%, 20%, 50%, 80%, 100% {
-      transform: rotate(0);
-    }
-    40% {
-      transform: rotate(-2deg);
-    }
-    60% {
-      transform: rotate(-1deg);
-    }
-  }
+}
+.card-project:hover {
+  animation: bounce 1s ease-out;
+}
+@media screen and (max-width: 720px) {
   .card-project:hover {
-    animation: bounce 1s ease-out;
+    animation: none;
   }
-  @media screen and (max-width: 720px) {
-    .card-project:hover {
-      animation: none;
-    }
-  }
+}
