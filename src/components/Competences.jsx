@@ -7,22 +7,6 @@ const Competences = () => {
       <h1>Compétences</h1>
       <div className="typecompetences">
         <div className="compcontainer">
-          <h2>CMS</h2>
-          <ul>
-            <li className="logocomp">
-              <img src="./assets/icones/wordpress.svg" alt="Logo Wordpress" />
-              <span>Wordpress</span>
-            </li>
-            <li className="logocomp">
-              <img
-                src="./assets/icones/woocommerce.svg"
-                alt="Logo Woocommerce"
-              />
-              <span>Woocommerce</span>
-            </li>
-          </ul>
-        </div>
-        <div className="compcontainer">
           <h2>Front-end</h2>
           <ul>
             <li className="logocomp">
@@ -57,6 +41,22 @@ const Competences = () => {
             <li className="logocomp">
               <img src="./assets/icones/sqlserver.svg" alt="Logo SQL Server" />
               <span>SQL Server</span>
+            </li>
+          </ul>
+        </div>
+        <div className="compcontainer">
+          <h2>CMS</h2>
+          <ul>
+            <li className="logocomp">
+              <img src="./assets/icones/wordpress.svg" alt="Logo Wordpress" />
+              <span>Wordpress</span>
+            </li>
+            <li className="logocomp">
+              <img
+                src="./assets/icones/woocommerce.svg"
+                alt="Logo Woocommerce"
+              />
+              <span>Woocommerce</span>
             </li>
           </ul>
         </div>
