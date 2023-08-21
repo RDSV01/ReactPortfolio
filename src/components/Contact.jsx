@@ -68,6 +68,10 @@ const Contact = () => {
       <form ref={form} onSubmit={sendEmail}>
         <Slide className="formfade" triggerOnce>
           <div className="reseaux">
+            <p className="msgreseau">
+              Vous n'aimez pas les formulaires ? Envoyez moi un e-mail à
+              l'adresse ci dessous.
+            </p>
             <p>
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -124,6 +128,7 @@ const Contact = () => {
               <a
                 target="_blank"
                 href="https://www.linkedin.com/in/raphaeldasilva1/"
+                rel="noreferrer"
               >
                 raphaeldasilva1
               </a>

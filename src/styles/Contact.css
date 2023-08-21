@@ -1,295 +1,296 @@
 textarea {
-    resize:vertical;
-    min-height: 150px;
-    max-height: 400px;
-
-   }
-.contact{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding-top: 70px;
-    margin-bottom: 100px;
+  resize: vertical;
+  min-height: 150px;
+  max-height: 400px;
 }
-.contact h2{
-    color: white;
-    letter-spacing: 3px;
-    font-size: 38px;
-    margin-bottom: 0;
-    text-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+.contact {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 70px;
+  margin-bottom: 100px;
 }
-.contact form{
-    display: flex;
-    flex-direction: row;
-    width: 80%;
-    margin-left: auto;
-    margin-right: auto;
-    justify-content: space-evenly;
-    gap: 50px;
-    padding: 25px;
+.contact h2 {
+  color: white;
+  letter-spacing: 3px;
+  font-size: 38px;
+  margin-bottom: 0;
+  text-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
-.formfade{
+.contact form {
+  display: flex;
+  flex-direction: row;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  justify-content: space-evenly;
+  gap: 50px;
+  padding: 25px;
+  align-items: flex-start;
+}
+.formfade {
   display: flex;
   align-items: center;
 }
-.reseaux{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+.reseaux {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
-.reseaux p{
-    display: flex;
-    align-items: center;
-    gap: 8px;
-    color: #fff;
+.reseaux p {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: #fff;
 }
-.reseaux a{
-    color: white;
-    text-decoration: underline;
+.reseaux a {
+  color: white;
+  text-decoration: underline;
 }
-.nomprenom{
-    display: flex;
-    gap: 30px;
+.nomprenom {
+  display: flex;
+  gap: 30px;
 }
-.formulaire{
-    display: flex;
-    flex-direction: column;
-    gap: 8px;
-    width: 420px;
-}  
-.formulaire h3{
-    text-align: center;
-    color: #fff;
-    font-size: 22px;
-    margin: 0;
-    text-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+.formulaire {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  width: 500px;
 }
-   .form__group {
-    display: flex;
-    position: relative;
-    padding: 15px 0 0;
-    margin-top: 10px;
-    
+.formulaire h3 {
+  text-align: center;
+  color: #fff;
+  font-size: 22px;
+  margin: 0;
+  text-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.form__group {
+  display: flex;
+  position: relative;
+  padding: 15px 0 0;
+  margin-top: 10px;
+}
+
+.form__field {
+  font-family: inherit;
+  width: 100%;
+  height: 23px;
+  border: 0;
+  border-radius: 12px;
+  outline: 0;
+  font-size: 16px;
+  color: #fff;
+  padding: 10px;
+  background: #12121290;
+  transition: border-color 0.2s;
+}
+.form__field::placeholder {
+  color: transparent;
+}
+.form__field:placeholder-shown ~ .form__label {
+  font-size: 14px;
+  cursor: text;
+  top: 26.5px;
+  z-index: -1;
+}
+
+.form__label {
+  position: absolute;
+  top: -10px;
+  left: 8px;
+  display: block;
+  transition: 0.2s;
+  font-size: 14px;
+  color: #ffffff;
+}
+.form__field:focus ~ .form__label {
+  position: absolute;
+  top: -10px;
+  display: block;
+  transition: 0.2s;
+  font-size: 14px;
+  color: #ffffff;
+}
+
+/* reset input */
+.form__field:required,
+.form__field:invalid {
+  box-shadow: none;
+}
+
+.btnForm {
+  font-family: inherit;
+  font-size: 18px;
+  background: royalblue;
+  color: white;
+  padding: 8px;
+  padding-left: 0.9em;
+  display: flex;
+  align-items: center;
+  border: none;
+  border-radius: 16px;
+  overflow: hidden;
+  transition: all 0.2s;
+}
+
+.btnForm span {
+  display: block;
+  margin-left: 0.3em;
+  transition: all 0.3s ease-in-out;
+}
+
+.btnForm svg {
+  display: block;
+  transform-origin: center center;
+  transition: transform 0.3s ease-in-out;
+}
+
+.btnForm:hover .svg-wrapper {
+  animation: fly-1 0.6s ease-in-out infinite alternate;
+}
+
+.btnForm:hover svg {
+  transform: translateX(1.2em) rotate(45deg) scale(1.1);
+}
+
+.btnForm:hover span {
+  transform: translateX(5em);
+}
+
+.btnForm:active {
+  transform: scale(0.95);
+}
+.msginfo {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+  border-radius: 16px;
+  margin-bottom: -8px;
+}
+.msginfo.envoye {
+  background-color: #2ecc71;
+}
+.msginfo.erreur {
+  background-color: #e74c3c;
+}
+.msginfo p {
+  margin: 0;
+  color: white;
+  font-size: 14px;
+}
+.msginfo svg {
+  cursor: pointer;
+  color: #fff;
+  min-width: 22px;
+  max-width: 22px;
+}
+
+@keyframes fly-1 {
+  from {
+    transform: translateY(0.1em);
   }
-  
-  .form__field {
-    font-family: inherit;
+
+  to {
+    transform: translateY(-0.1em);
+  }
+}
+.check {
+  cursor: pointer;
+  position: relative;
+  margin: auto;
+  width: 18px;
+  height: 18px;
+  -webkit-tap-highlight-color: transparent;
+  transform: translate3d(0, 0, 0);
+}
+
+.check:before {
+  content: "";
+  position: absolute;
+  top: -15px;
+  left: -15px;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background: rgba(34, 50, 84, 0.03);
+  opacity: 0;
+  transition: opacity 0.2s ease;
+}
+
+.check svg {
+  position: relative;
+  z-index: 1;
+  fill: none;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke: #c8ccd4;
+  stroke-width: 1.5;
+  transform: translate3d(0, 0, 0);
+  transition: all 0.2s ease;
+}
+
+.check svg path {
+  stroke-dasharray: 60;
+  stroke-dashoffset: 0;
+}
+
+.check svg polyline {
+  stroke-dasharray: 22;
+  stroke-dashoffset: 66;
+}
+
+.check:hover:before {
+  opacity: 1;
+}
+
+.check:hover svg {
+  stroke: #ffffff;
+}
+#cbx {
+  display: none;
+}
+
+#cbx:checked + .check svg {
+  stroke: #ffffff;
+}
+
+#cbx:checked + .check svg path {
+  stroke-dashoffset: 60;
+  transition: all 0.3s linear;
+}
+
+#cbx:checked + .check svg polyline {
+  stroke-dashoffset: 42;
+  transition: all 0.2s linear;
+  transition-delay: 0.15s;
+}
+.rgpd {
+  display: flex;
+  gap: 12px;
+}
+.rgpd label {
+  color: white;
+  font-size: 14px;
+}
+.rgpd a {
+  color: white;
+  text-decoration: underline;
+}
+.msgreseau {
+  font-size: 20px;
+  max-width: 500px;
+  margin-top: 0px;
+}
+
+@media (max-width: 720px) {
+  .contact form {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+@media (max-width: 490px) {
+  .formulaire {
     width: 100%;
-    height: 23px;
-    border: 0;
-    border-radius: 12px;
-    outline: 0;
-    font-size: 16px;
-    color: #fff;
-    padding: 10px ;
-    background: #12121290;
-    transition: border-color 0.2s;
   }
-  .form__field::placeholder {
-    color: transparent;
-  }
-  .form__field:placeholder-shown ~ .form__label {
-    font-size: 14px;
-    cursor: text;
-    top: 26.5px;
-    z-index: -1;
-  }
-  
-  .form__label {
-    position: absolute;
-    top: -10px;
-    left: 8px;
-    display: block;
-    transition: 0.2s;
-    font-size: 14px;
-    color: #ffffff;
-  }
-  .form__field:focus ~ .form__label {
-    position: absolute;
-    top: -10px;
-    display: block;
-    transition: 0.2s;
-    font-size: 14px;
-    color: #ffffff;
-  }
-  
-  /* reset input */
-  .form__field:required, .form__field:invalid {
-    box-shadow: none;
-  }
-   
-   
-   
-  .btnForm{
-    font-family: inherit;
-    font-size: 18px;
-    background: royalblue;
-    color: white;
-    padding: 8px;
-    padding-left: 0.9em;
-    display: flex;
-    align-items: center;
-    border: none;
-    border-radius: 16px;
-    overflow: hidden;
-    transition: all 0.2s;
-  }
-  
- .btnForm span {
-    display: block;
-    margin-left: 0.3em;
-    transition: all 0.3s ease-in-out;
-  }
-  
-  .btnForm svg {
-    display: block;
-    transform-origin: center center;
-    transition: transform 0.3s ease-in-out;
-  }
-  
-  .btnForm:hover .svg-wrapper {
-    animation: fly-1 0.6s ease-in-out infinite alternate;
-  }
-  
-  .btnForm:hover svg {
-    transform: translateX(1.2em) rotate(45deg) scale(1.1);
-  }
-  
-  .btnForm:hover span {
-    transform: translateX(5em);
-  }
-  
-  .btnForm:active {
-    transform: scale(0.95);
-  }
-  .msginfo {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 10px;
-    border-radius: 16px;
-    margin-bottom: -8px;
 }
-.msginfo.envoye{
-    background-color: #2ecc71;
-}
-.msginfo.erreur{
-    background-color: #e74c3c;
-}
-.msginfo p{
-    margin: 0;
-    color: white;
-    font-size: 14px;
-}
-.msginfo svg{
-    cursor: pointer;
-    color: #fff;
-    min-width: 22px;
-    max-width: 22px;
-  }
-  
-  @keyframes fly-1 {
-    from {
-      transform: translateY(0.1em);
-    }
-  
-    to {
-      transform: translateY(-0.1em);
-    }
-  }
-  .check {
-    cursor: pointer;
-    position: relative;
-    margin: auto;
-    width: 18px;
-    height: 18px;
-    -webkit-tap-highlight-color: transparent;
-    transform: translate3d(0, 0, 0);
-  }
-  
-  .check:before {
-    content: "";
-    position: absolute;
-    top: -15px;
-    left: -15px;
-    width: 48px;
-    height: 48px;
-    border-radius: 50%;
-    background: rgba(34,50,84,0.03);
-    opacity: 0;
-    transition: opacity 0.2s ease;
-  }
-  
-  .check svg {
-    position: relative;
-    z-index: 1;
-    fill: none;
-    stroke-linecap: round;
-    stroke-linejoin: round;
-    stroke: #c8ccd4;
-    stroke-width: 1.5;
-    transform: translate3d(0, 0, 0);
-    transition: all 0.2s ease;
-  }
-  
-  .check svg path {
-    stroke-dasharray: 60;
-    stroke-dashoffset: 0;
-  }
-  
-  .check svg polyline {
-    stroke-dasharray: 22;
-    stroke-dashoffset: 66;
-  }
-  
-  .check:hover:before {
-    opacity: 1;
-  }
-  
-  .check:hover svg {
-    stroke: #ffffff;
-  }
-  #cbx{
-    display: none;
-  }
-  
-  #cbx:checked + .check svg {
-    stroke: #ffffff;
-  }
-  
-  #cbx:checked + .check svg path {
-    stroke-dashoffset: 60;
-    transition: all 0.3s linear;
-  }
-  
-  #cbx:checked + .check svg polyline {
-    stroke-dashoffset: 42;
-    transition: all 0.2s linear;
-    transition-delay: 0.15s;
-  }
-  .rgpd{
-    display: flex;
-    gap: 12px;
-  }
-  .rgpd label{
-    color: white;
-    font-size: 14px;
-  }
-  .rgpd a{
-    color: white;
-    text-decoration: underline;
-  }
-  
-  
-  @media (max-width: 720px) {
-    .contact form{
-        flex-direction: column;
-        align-items: center;
-    }
-  }
-  @media (max-width: 490px) {
-    .formulaire{
-        width: 100%;
-    }
-  }
-  
