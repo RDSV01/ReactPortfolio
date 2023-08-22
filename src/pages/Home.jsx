@@ -7,6 +7,7 @@ import Experience from "../components/Experience";
 import Contact from "../components/Contact";
 import Footer from "../components/Footer";
 import Formations from "../components/Formations";
+import Totop from "../components/Totop";
 
 const Home = () => {
   return (
@@ -19,6 +20,7 @@ const Home = () => {
       <Formations />
       <Competences />
       <Contact />
+      <Totop />
       <Footer />
     </div>
   );
