@@ -91,7 +91,7 @@ textarea {
 .form__field:placeholder-shown ~ .form__label {
   font-size: 15px;
   cursor: text;
-  top: 26.5px;
+  top: 26.3px;
   z-index: -1;
 }
 
