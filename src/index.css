@@ -9,7 +9,6 @@
   scroll-behavior: smooth;
   overflow-x: hidden; 
 }
-
 body{
   margin: 0;
   padding: 0;
@@ -48,4 +47,3 @@ textarea::-webkit-scrollbar-button {
 a{
   text-decoration: none;
 }
-
