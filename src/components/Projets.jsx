@@ -80,8 +80,8 @@ const Projets = () => {
                 />
                 <p className="card-project-title">Base Adresse Nationale</p>
                 <p className="card-project-description">
-                  API simple d'utilisation pour de l'autocompletion d'adresse
-                  avec la Base Adresse Nationale
+                  API simple d'utilisation pour de l'autocomplétion d'adresse
+                  avec la Base Adresse Nationale (service public).
                 </p>
                 <div className="badge-techno-projet">
                   <p>Javascript</p>

@@ -69,8 +69,8 @@ const Contact = () => {
         <Slide className="formfade" triggerOnce>
           <div className="reseaux">
             <p className="msgreseau">
-              Vous n'aimez pas les formulaires ? Envoyez moi un e-mail à
-              l'adresse ci dessous.
+              Vous n'aimez pas les formulaires ? Envoyez-moi un e-mail à
+              l'adresse ci-dessous.
             </p>
             <p>
               <svg
