@@ -14,7 +14,7 @@ const Card = () => {
             Raphaël <span>Da Silva</span>
           </h1>
           <h2>Développeur FullStack.</h2>
-          <h3>Passionné depuis mes 16 ans et fier d'en faire mon métier.</h3>
+          <h3>"Passion pour le code, création sans limite."</h3>
           <div className="boutonsReseaux">
             <Link
               target="_blank"
