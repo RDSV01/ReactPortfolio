@@ -1,15 +1,15 @@
 @font-face {
   font-family: "Poppins";
   src: local("Poppins"), url("/assets/font/Poppins-Regular.ttf");
-  font-display: block ;
+  font-display: block;
 }
-:root{
-  background-color: #222 ;
-  font-family: 'Poppins';
+:root {
+  background-color: #222;
+  font-family: "Poppins";
   scroll-behavior: smooth;
-  overflow-x: hidden; 
+  overflow-x: hidden;
 }
-body{
+body {
   margin: 0;
   padding: 0;
 }
@@ -25,7 +25,7 @@ body::-webkit-scrollbar-thumb {
   border-radius: 16px;
 }
 body::-webkit-scrollbar-button {
-  display:none;
+  display: none;
 }
 
 textarea::-webkit-scrollbar {
@@ -42,8 +42,8 @@ textarea::-webkit-scrollbar-thumb {
   border-radius: 16px;
 }
 textarea::-webkit-scrollbar-button {
-  display:none;
+  display: none;
 }
-a{
+a {
   text-decoration: none;
 }

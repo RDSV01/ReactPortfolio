@@ -1,0 +1,25 @@
+.totop {
+  position: fixed;
+  width: 50px;
+  height: 50px;
+  border-radius: 10px;
+  background-color: #121212;
+  right: 20px;
+  bottom: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+  pointer-events: none;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+.totop.visible {
+  opacity: 1;
+  pointer-events: auto;
+}
+.totop svg {
+  width: 30px;
+  height: 30px;
+  margin-top: 4px;
+}
