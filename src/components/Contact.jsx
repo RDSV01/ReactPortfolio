@@ -150,7 +150,7 @@ const Contact = () => {
                   required
                   maxLength={40}
                 />
-                <label htmlFor="from_firstname" className="form__label">
+                <label htmlFor="firstname" className="form__label">
                   Prénom
                 </label>
               </div>
@@ -164,7 +164,7 @@ const Contact = () => {
                   required
                   maxLength={40}
                 />
-                <label htmlFor="from_lastname" className="form__label">
+                <label htmlFor="lastname" className="form__label">
                   Nom
                 </label>
               </div>
@@ -180,7 +180,7 @@ const Contact = () => {
                 required
                 maxLength={50}
               />
-              <label htmlFor="from_email" className="form__label">
+              <label htmlFor="email" className="form__label">
                 Email
               </label>
             </div>
