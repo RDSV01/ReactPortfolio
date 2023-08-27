@@ -21,6 +21,7 @@
   display: flex;
   justify-content: center;
   color: #fff;
+  margin: 0 10px;
 }
 .timeline ul {
   list-style-type: none;
