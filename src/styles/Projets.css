@@ -28,7 +28,6 @@
 @media screen and (max-width: 991px) {
   .container {
     max-width: 959px !important;
-    margin: 0 16px !important;
     padding: 0 !important;
     width: auto !important;
   }
@@ -90,11 +89,10 @@
 .bg-blue-box {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  gap: 6px;
+  justify-content: space-between;
   position: relative;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-  min-height: 300px;
+  min-height: 280px;
 }
 
 .bg-green-box::after,
@@ -123,7 +121,7 @@
 }
 
 .card-project-description {
-  font-weight: 600;
+  font-weight: 300;
   line-height: 32px;
   color: rgba(255, 255, 255, 0.7);
   font-size: 15px;
@@ -164,7 +162,13 @@
   animation: bounce 1s ease-out;
 }
 @media screen and (max-width: 720px) {
+  .card-project{
+    max-width: 270px;
+  }
   .card-project:hover {
     animation: none;
+  }
+  .card-project-title{
+    font-size: 22px;
   }
 }
