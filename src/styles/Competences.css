@@ -5,10 +5,10 @@
   align-items: center;
   padding-top: 120px;
 }
-.competences h1 {
+.competences h2 {
   color: white;
   letter-spacing: 3px;
-  font-size: 42px;
+  font-size: 38px;
   margin-bottom: 0;
   text-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
@@ -20,7 +20,7 @@
   padding: 30px;
   justify-content: space-evenly;
 }
-.typecompetences h2 {
+.typecompetences h3 {
   color: white;
   margin-top: 0;
   text-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;

@@ -4,10 +4,10 @@ import "../styles/Competences.css";
 const Competences = () => {
   return (
     <div className="competences" id="competences">
-      <h1>Compétences</h1>
+      <h2>Compétences</h2>
       <div className="typecompetences">
         <div className="compcontainer">
-          <h2>Front-end</h2>
+          <h3>Front-end</h3>
           <ul>
             <li className="logocomp">
               <img src="./assets/icones/react.svg" alt="Logo react" />
@@ -20,7 +20,7 @@ const Competences = () => {
           </ul>
         </div>
         <div className="compcontainer">
-          <h2>Back-end</h2>
+          <h3>Back-end</h3>
           <ul>
             <li className="logocomp">
               <img src="./assets/icones/symfony.svg" alt="Logo Symfony" />
@@ -45,7 +45,7 @@ const Competences = () => {
           </ul>
         </div>
         <div className="compcontainer">
-          <h2>CMS</h2>
+          <h3>CMS</h3>
           <ul>
             <li className="logocomp">
               <img src="./assets/icones/wordpress.svg" alt="Logo Wordpress" />
@@ -61,7 +61,7 @@ const Competences = () => {
           </ul>
         </div>
         <div className="compcontainer">
-          <h2>Autre</h2>
+          <h3>Autre</h3>
           <ul>
             <li className="logocomp">
               <img src="./assets/icones/git.svg" alt="Logo GIT" />
