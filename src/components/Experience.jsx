@@ -5,7 +5,7 @@ import { Fade } from "react-awesome-reveal";
 const Experience = () => {
   return (
     <div className="experience" id="experiences">
-      <h1>Expériences</h1>
+      <h2>Expériences</h2>
       <div className="timeline">
         <ul>
           <li>

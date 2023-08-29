@@ -10,10 +10,10 @@ const Card = () => {
       <Slide duration={800} triggerOnce>
         <div className="texte">
           <p>Bienvenue ! Je suis</p>
-          <h1>
+          <h2>
             Raphaël <span>Da Silva</span>
-          </h1>
-          <h2>Développeur FullStack.</h2>
+          </h2>
+          <h1>Développeur FullStack</h1>
           <h3>"Passion pour le code, création sans limite."</h3>
           <div className="boutonsReseaux">
             <Link
@@ -68,7 +68,7 @@ const Card = () => {
                 <span>GitHub</span>
               </button>
             </Link>
-            {/* <Link
+            <Link
               target="_blank"
               to="https://www.malt.fr/profile/raphaeldasilva"
             >
@@ -99,7 +99,7 @@ const Card = () => {
                 </div>
                 <span>Malt</span>
               </button>
-            </Link> */}
+            </Link>
           </div>
         </div>
       </Slide>

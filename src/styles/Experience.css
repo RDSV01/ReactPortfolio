@@ -5,11 +5,11 @@
   padding-top: 120px;
   gap: 120px;
 }
-.experience h1 {
+.experience h2 {
   text-align: center;
   color: white;
   letter-spacing: 3px;
-  font-size: 42px;
+  font-size: 38px;
   margin-bottom: 0;
   font-weight: 600;
   text-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
@@ -73,7 +73,7 @@
     flex-direction: column;
     gap: 30px;
   }
-  .experience h1 {
+  .experience h2 {
     position: relative;
   }
 }
