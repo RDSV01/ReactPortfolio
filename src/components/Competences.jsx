@@ -1,4 +1,3 @@
-import React from "react";
 import "../styles/Competences.css";
 
 const Competences = () => {
@@ -9,6 +8,10 @@ const Competences = () => {
         <div className="compcontainer">
           <h3>Front-end</h3>
           <ul>
+          <li className="logocomp">
+              <img src="./assets/icones/vitejs.svg" alt="Logo vitejs" />
+              <span>ViteJS</span>
+            </li>
             <li className="logocomp">
               <img src="./assets/icones/react.svg" alt="Logo react" />
               <span>React</span>
