@@ -1,10 +1,15 @@
 import "../styles/Competences.css";
+import Tilt from 'react-parallax-tilt';
 
 const Competences = () => {
+    const isMobile = () => {
+    return window.innerWidth < 768; // Vous pouvez ajuster cette valeur si nécessaire
+  };
   return (
     <div className="competences" id="competences">
       <h2>Compétences</h2>
       <div className="typecompetences">
+        {isMobile() ? (
         <div className="compcontainer">
           <h3>Front-end</h3>
           <ul>
@@ -22,6 +27,27 @@ const Competences = () => {
             </li>
           </ul>
         </div>
+        ) : (
+          <Tilt>
+        <div className="compcontainer">
+          <h3>Front-end</h3>
+          <ul>
+          <li className="logocomp">
+              <img src="./assets/icones/vitejs.svg" alt="Logo vitejs" />
+              <span>ViteJS</span>
+            </li>
+            <li className="logocomp">
+              <img src="./assets/icones/react.svg" alt="Logo react" />
+              <span>React</span>
+            </li>
+            <li className="logocomp">
+              <img src="./assets/icones/javascript.svg" alt="Logo Javascript" />
+              <span>Javascript</span>
+            </li>
+          </ul>
+        </div>
+        </Tilt>
+          )}
         <div className="compcontainer">
           <h3>Back-end</h3>
           <ul>
