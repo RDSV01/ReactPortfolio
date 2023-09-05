@@ -66,7 +66,7 @@ const Contact = () => {
     <div className="contact" id="contact">
       <h2>Contact</h2>
       <form ref={form} onSubmit={sendEmail}>
-        <Slide className="formfade" triggerOnce>
+        <Bounce className="formfade" triggerOnce>
           <div className="reseaux">
             <p className="msgreseau">
               Vous n'aimez pas les formulaires ? Envoyez-moi un e-mail à
@@ -134,8 +134,8 @@ const Contact = () => {
               </a>
             </p>
           </div>
-        </Slide>
-        <Slide direction="right" triggerOnce>
+        </Bounce>
+        <Bounce triggerOnce>
           <div className="formulaire">
             <h3>Formulaire de contact</h3>
 
@@ -290,7 +290,7 @@ const Contact = () => {
               <span>{isSending ? "Envoi en cours..." : "Envoyer"}</span>
             </button>
           </div>
-        </Slide>
+        </Bounce>
       </form>
     </div>
   );

@@ -12,13 +12,21 @@
   margin-bottom: 0;
   text-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
+.compcontainer{
+  background-color: #740cdc;
+  padding: 20px;
+  border-radius: 28px;
+  min-width: 250px;
+  height: fit-content;
+}
 .typecompetences {
   display: flex;
-  gap: 60px;
+  gap: 25px;
   width: 100%;
   flex-wrap: wrap;
   padding: 30px;
-  justify-content: space-evenly;
+  margin-top: 30px;
+  justify-content: center;
 }
 .typecompetences h3 {
   color: white;
