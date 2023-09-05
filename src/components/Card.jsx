@@ -1,4 +1,3 @@
-import React from "react";
 import "../styles//Card.css";
 import { Link } from "react-router-dom";
 import { Slide } from "react-awesome-reveal";

@@ -23,10 +23,19 @@ textarea {
   width: 80%;
   margin-left: auto;
   margin-right: auto;
+  margin-top: 30px;
   justify-content: space-evenly;
   gap: 50px;
-  padding: 25px;
-  align-items: flex-start;
+  padding: 40px 30px;
+  align-items: center;
+  background-color: #121212;
+  border-radius: 28px;
+  box-shadow: 0 0 .2rem #fff,
+              0 0 .2rem #fff,
+              0 0 2rem #0067dc,
+              0 0 0.8rem #0067dc,
+              0 0 2.8rem #0067dc,
+              inset 0 0 1.3rem #0067dc;
 }
 .formfade {
   display: flex;
@@ -76,13 +85,13 @@ textarea {
   font-family: inherit;
   width: 100%;
   height: 26px;
-  border: 0;
+  border: 2px solid #0067dc;
   border-radius: 12px;
   outline: 0;
   font-size: 16px;
   color: #fff;
   padding: 10px;
-  background: #12121290;
+  background: #12121230;
   transition: border-color 0.2s;
 }
 .form__field::placeholder {
@@ -91,7 +100,7 @@ textarea {
 .form__field:placeholder-shown ~ .form__label {
   font-size: 15px;
   cursor: text;
-  top: 26.3px;
+  top: 27.7px;
   z-index: -1;
 }
 
@@ -295,8 +304,6 @@ textarea {
     flex-direction: column;
     align-items: center;
   }
-}
-@media (max-width: 490px) {
   .formulaire {
     width: 100%;
   }
