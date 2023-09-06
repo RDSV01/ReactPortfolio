@@ -29,7 +29,7 @@
 	background:#49556B;
 	padding: 1rem 2rem;
     border-radius: 0.8rem;
-    box-shadow: 5px 5px 20px #6d6b6b6b;
+    box-shadow: 0px 0px 20px #6d6b6b6b;
     color: white;
 	height: fit-content;
 }
@@ -112,9 +112,9 @@
     font-weight: 500;
     line-height: 1.5;
 }
-.review p button{
+.review button{
 	padding: 5px 12px;
-	font-size: 16px;
+	font-size: 12px;
 }
 .review.dark p{
 	color: #0e0e0e;
