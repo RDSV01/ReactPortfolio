@@ -1,16 +1,20 @@
 import "../styles//Card.css";
-import { Slide, JackInTheBox } from "react-awesome-reveal";
+import { JackInTheBox, Slide} from "react-awesome-reveal";
 import Tilt from "react-parallax-tilt";
 import BoutonsReseaux from "./BoutonsReseaux";
 
 const Card = () => {
   return (
     <div className="card">
-      <JackInTheBox direction="right">
-        <img src="./assets/img/emoji_hand.png" className="float_emoji" id="emoji_1" alt="" />
-      </JackInTheBox>
-        <img src="./assets/img/emoji_laptop.png" className="float_emoji" id="emoji_2" alt="" />
-        <img src="./assets/img/emoji_rocket.gif" className="float_emoji" id="emoji_3" alt="" />
+        <JackInTheBox className="emoji_1">
+          <img src="./assets/img/emoji_hand.png" className="float_emoji"  alt="" />
+        </JackInTheBox>
+        <JackInTheBox className="emoji_2">
+          <img src="./assets/img/emoji_laptop.png" className="float_emoji" id="emoji_2" alt="" />
+        </JackInTheBox>
+        <JackInTheBox className="emoji_3">
+          <img src="./assets/img/emoji_rocket.gif" className="float_emoji" id="emoji_3" alt="" />
+        </JackInTheBox>
       <Slide duration={800} triggerOnce>
         <div className="texte">
           <p>Bienvenue ! Je suis</p>

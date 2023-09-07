@@ -10,20 +10,23 @@
     margin-top: 180px;
     padding: 30px;
 }
+
 .float_emoji{
-  position: absolute;
   width: 65px;
   height: 65px;
 }
-img#emoji_1 {
-    top: -25px;
-    left: 15%;
+.emoji_1 {
+  position: absolute;
+  top: -25px;
+  left: 15%;
 }
-img#emoji_2 {
-    left: 20%;
-    bottom: -65px;
+.emoji_2 {
+  position: absolute;
+  left: 20%;
+  bottom: -65px;
 }
-img#emoji_3 {
+.emoji_3 {
+  position: absolute;
   right: 21%;
   bottom: 20px;
 }
@@ -65,24 +68,24 @@ img#emoji_3 {
     clip-path: ellipse(50% 50%) ;
 }
 @media (max-width: 1500px){
-  img#emoji_1 {
+.emoji_1 {
     left: 12%;
 }
-img#emoji_2 {
+.emoji_2 {
     left: 16%;
 }
-img#emoji_3 {
+.emoji_3 {
   right: 16%;
 }
 }
 @media (max-width: 1300px){
-  img#emoji_1 {
+.emoji_1 {
     left: 5%;
 }
-img#emoji_2 {
+.emoji_2 {
     left: 10%;
 }
-img#emoji_3 {
+.emoji_3 {
   right: 8%;
 }
 }

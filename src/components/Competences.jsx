@@ -1,6 +1,7 @@
 import "../styles/Competences.css";
 import Tilt from 'react-parallax-tilt';
 
+
 const Competences = () => {
     const isMobile = () => {
     return window.innerWidth < 768; // Vous pouvez ajuster cette valeur si nécessaire
