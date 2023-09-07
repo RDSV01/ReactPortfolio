@@ -8,7 +8,10 @@ textarea {
   flex-direction: column;
   align-items: center;
   padding-top: 70px;
-  margin-bottom: 120px;
+  padding-bottom: 120px;
+  background-image: url('/public/assets/img/rouen.png');
+  background-size: cover;
+  background-position: center;
 }
 .contact h2 {
   color: white;

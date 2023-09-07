@@ -8,6 +8,7 @@ import Contact from "../components/Contact";
 import Footer from "../components/Footer";
 import Formations from "../components/Formations";
 import Totop from "../components/Totop";
+import Recomandations from "../components/Recomandations";
 
 const Home = () => {
   return (
@@ -19,6 +20,7 @@ const Home = () => {
       <Experience />
       <Formations />
       <Competences />
+      <Recomandations/>
       <Contact />
       <Totop />
       <Footer />
