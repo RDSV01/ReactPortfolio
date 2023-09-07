@@ -67,6 +67,23 @@
     height: 240px;
     clip-path: ellipse(50% 50%) ;
 }
+/* Ajoutez ces styles à votre fichier CSS */
+.rocketAnimation {
+  animation-name: rocketLaunch;
+  animation-duration: 1s;
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: forwards;
+}
+
+@keyframes rocketLaunch {
+  0% {
+    transform: translateY(0) translateX(0);
+  }
+  100% {
+    transform: translateY(-1000px) translateX(1000px);
+  }
+}
+
 @media (max-width: 1500px){
 .emoji_1 {
     left: 12%;

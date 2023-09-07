@@ -2,18 +2,32 @@ import "../styles//Card.css";
 import { JackInTheBox, Slide} from "react-awesome-reveal";
 import Tilt from "react-parallax-tilt";
 import BoutonsReseaux from "./BoutonsReseaux";
+import React, { useState } from "react";
+
+
 
 const Card = () => {
+  const [rocketAnimation, setRocketAnimation] = useState(false);
+
+  const handleRocketClick = () => {
+    setRocketAnimation(true);
+
+    // Réinitialisez l'animation après un certain délai
+    setTimeout(() => {
+      setRocketAnimation(false);
+    }, 1000); // ajustez la durée de l'animation selon vos besoins
+  };
+  
   return (
     <div className="card">
-        <JackInTheBox className="emoji_1">
+        <JackInTheBox className="emoji_1" delay={100}>
           <img src="./assets/img/emoji_hand.png" className="float_emoji"  alt="" />
         </JackInTheBox>
-        <JackInTheBox className="emoji_2">
+        <JackInTheBox className="emoji_2" delay={250}>
           <img src="./assets/img/emoji_laptop.png" className="float_emoji" id="emoji_2" alt="" />
         </JackInTheBox>
-        <JackInTheBox className="emoji_3">
-          <img src="./assets/img/emoji_rocket.gif" className="float_emoji" id="emoji_3" alt="" />
+        <JackInTheBox className="emoji_3" delay={400}>
+           <img src="./assets/img/emoji_rocket.gif" className={`float_emoji ${rocketAnimation ? "rocketAnimation" : ""}`} id="emoji_3" alt="" onClick={handleRocketClick} />
         </JackInTheBox>
       <Slide duration={800} triggerOnce>
         <div className="texte">
