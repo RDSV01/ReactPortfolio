@@ -1,3 +1,24 @@
+/* Slider container */
+.slider-container {
+  display: flex;
+  overflow-x: scroll;
+  scroll-snap-type: x mandatory;
+  scrollbar-width: none; /* Pour masquer la barre de défilement */
+  -ms-overflow-style: none;
+}
+
+/* Style de chaque diapositive */
+.card-project {
+  flex: 0 0 auto;
+  scroll-snap-align: start;
+  margin-right: 20px; /* Espacement entre les diapositives */
+}
+
+/* Masquer les flèches de défilement du navigateur */
+.slider-container::-webkit-scrollbar {
+  display: none;
+}
+
 .projets {
   padding-top: 120px;
 }

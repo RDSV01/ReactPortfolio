@@ -9,9 +9,6 @@ textarea {
   align-items: center;
   padding-top: 70px;
   padding-bottom: 120px;
-  background-image: url('/public/assets/img/rouen.png');
-  background-size: cover;
-  background-position: center;
 }
 .contact h2 {
   color: white;
@@ -54,6 +51,7 @@ textarea {
   align-items: center;
   gap: 8px;
   color: #fff;
+  margin: 10px 0px;
 }
 .reseaux a {
   color: white;
@@ -295,6 +293,17 @@ textarea {
   font-size: 20px;
   max-width: 500px;
   margin-top: 0px;
+}
+.mesuivre{
+  display: flex;
+  flex-direction: column;
+  margin-top: 18px;
+}
+.mesuivre h3{
+  color: white;
+  font-weight: 300;
+  font-size: 20px;
+  margin: 10px 0px;
 }
 @media (max-width: 900px) {
   .contact form {
