@@ -182,9 +182,16 @@
 .card-project:hover {
   animation: bounce 1s ease-out;
 }
+.swiper-backface-hidden .swiper-slide{
+  display: flex;
+  justify-content: center;
+}
+.swiper-pagination-fraction, .swiper-pagination-custom, .swiper-horizontal > .swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal{
+  bottom: var(--swiper-pagination-bottom, -6px) !important;
+}
 @media screen and (max-width: 720px) {
   .card-project{
-    max-width: 270px;
+    max-width: fit-content;
   }
   .card-project:hover {
     animation: none;

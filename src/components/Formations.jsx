@@ -2,7 +2,6 @@ import React from "react";
 import "../styles/Formations.css";
 import { Fade } from "react-awesome-reveal";
 
-
 const Formations = () => {
   return (
     <div className="formations" id="formations">

@@ -73,6 +73,10 @@
     transform: rotate(-1deg);
   }
 }
+.Collapsible span{
+  display: flex;
+  justify-content: center;
+}
 @media screen and (max-width: 720px) {
   .containerformations:hover {
     animation: none;
