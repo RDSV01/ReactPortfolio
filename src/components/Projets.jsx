@@ -1,7 +1,7 @@
 import "../styles/Projets.css";
 import Marquee from "react-fast-marquee";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Navigation, Pagination, Scrollbar } from "swiper/modules";
+import { Autoplay, Pagination, Scrollbar } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
@@ -11,16 +11,33 @@ const Projets = () => {
     <div className="projets" id="projets">
       <div className="container">
         <p className="container-title">Projets</p>
-        {/* <Marquee pauseOnHover autoFill speed={70}> */}
         <div className="gradient-card-projects">
           <Swiper
-            modules={[Pagination, Scrollbar]}
+            className="swiperprojets"
+            modules={[Pagination, Scrollbar, Autoplay]}
             pagination={{ clickable: true }}
             scrollbar={{ draggable: true }}
+            autoplay={{
+              delay: 2000,
+            }}
             spaceBetween={50}
             slidesPerView={1}
             onSlideChange={() => console.log("slide change")}
             onSwiper={(swiper) => console.log(swiper)}
+            breakpoints={{
+              680: {
+                slidesPerView: 2,
+              },
+              968: {
+                slidesPerView: 2,
+              },
+              1200: {
+                slidesPerView: 2,
+              },
+              1285: {
+                slidesPerView: 3,
+              },
+            }}
           >
             <SwiperSlide>
               <div className="card-project">
@@ -115,7 +132,6 @@ const Projets = () => {
             </SwiperSlide>
           </Swiper>
         </div>
-        {/* </Marquee> */}
         <h2>
           Et d'autres projets ! N'hésitez pas à{" "}
           <a href="#contact">me contacter</a> pour + d'infos.

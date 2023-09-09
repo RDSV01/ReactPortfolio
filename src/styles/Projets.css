@@ -112,8 +112,7 @@
   flex-direction: column;
   justify-content: space-between;
   position: relative;
-  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-  min-height: 280px;
+  min-height: 296px;
 }
 
 .bg-green-box::after,
@@ -188,6 +187,14 @@
 }
 .swiper-pagination-fraction, .swiper-pagination-custom, .swiper-horizontal > .swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal{
   bottom: var(--swiper-pagination-bottom, -6px) !important;
+}
+.swiperprojets{
+  width: 80%;
+}
+@media screen and (max-width: 900px) {
+  .swiperprojets{
+    width: 100%;
+  }
 }
 @media screen and (max-width: 720px) {
   .card-project{
