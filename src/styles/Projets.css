@@ -191,6 +191,9 @@
 .swiperprojets{
   width: 80%;
 }
+.swiper-pagination-bullet {
+  background: white !important;
+}
 @media screen and (max-width: 900px) {
   .swiperprojets{
     width: 100%;
