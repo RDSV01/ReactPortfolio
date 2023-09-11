@@ -76,6 +76,7 @@
 }
 .card span{
     white-space: nowrap;
+    transition: all .01s ease-out;
 }
 
 .photoprofile img{
