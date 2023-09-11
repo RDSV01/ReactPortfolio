@@ -4,7 +4,6 @@
   font-display: block;
 }
 :root {
-  background-color: #222;
   font-family: "Poppins";
   scroll-behavior: smooth;
   overflow-x: hidden;
@@ -46,4 +45,10 @@ textarea::-webkit-scrollbar-button {
 }
 a {
   text-decoration: none;
+}
+.home{
+  background-color: #222;
+}
+.light-mode.home{
+  background-color: #f8f8f8;
 }

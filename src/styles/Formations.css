@@ -11,6 +11,10 @@
   margin-bottom: 0;
   text-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
+.light-mode.home .formations h2{
+  color: #333;
+  text-shadow: none;
+}
 .groupformations {
   display: flex;
   gap: 25px;
@@ -26,6 +30,9 @@
   max-width: 250px;
   min-width: 250px;
   box-shadow: 8px 8px 0px #fff;
+}
+.light-mode.home .containerformations{
+  box-shadow: 8px 8px 0px #333;
 }
 .containerformations:hover {
   animation: bounce 1s ease-out;

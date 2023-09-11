@@ -36,6 +36,10 @@
     font-size: 28px;
     text-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
+.light-mode.home .card h1{
+  color: #333;
+  text-shadow: none;
+}
 .card h2{
     color: white;
     font-size: 64px;
@@ -44,6 +48,10 @@
     text-align: start;
     text-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
+.light-mode.home .card h2{
+  color: #333;
+  text-shadow: none;
+}
 .card p{
     color: white;
     font-size: 22px;
@@ -51,12 +59,20 @@
     margin-left: -10px;
     text-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
+.light-mode.home .card p{
+  color: #333;
+  text-shadow: none;
+}
 .card h3{
     color: rgb(224, 224, 224);
     font-size: 20px;
     font-weight: 300;
     margin-top: 8px;
     text-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.light-mode.home .card h3{
+  color: #333;
+  text-shadow: none;
 }
 .card span{
     white-space: nowrap;

@@ -32,19 +32,19 @@
   color: white;
   text-decoration: underline;
 }
+.light-mode.home .container a{
+  color: #333;
+  text-shadow: none;
+}
 .container h2 {
   color: white;
   text-align: center;
   margin-top: 45px;
   text-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
-@media screen and (min-width: 992px) and (max-width: 1439px) {
-  /* .container {
-      max-width: 1279px !important;
-      padding: 0 !important;
-      margin: 0 80px !important;
-      width: auto !important;
-    } */
+.light-mode.home .container h2{
+  color: #333;
+  text-shadow: none;
 }
 @media screen and (max-width: 991px) {
   .container {
@@ -70,6 +70,7 @@
 }
 
 .container-title {
+  position: relative;
   text-align: center;
   color: white;
   letter-spacing: 3px;
@@ -77,6 +78,11 @@
   margin-bottom: 0;
   font-weight: 600;
   text-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  z-index: 1;
+}
+.light-mode.home .container-title{
+  color: #333;
+  text-shadow: none;
 }
 
 .card-project {

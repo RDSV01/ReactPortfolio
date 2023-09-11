@@ -17,7 +17,6 @@ const Formations = () => {
     };
 
   }, []);
-
   return (
     <div className="formations" id="formations">
       <h2>Formations & Certifications</h2>
