@@ -9,9 +9,6 @@ textarea {
   align-items: center;
   padding-top: 70px;
   padding-bottom: 120px;
-  background-image: url('/public/assets/img/rouen.png');
-  background-size: cover;
-  background-position: center;
 }
 .contact h2 {
   color: white;
@@ -19,6 +16,10 @@ textarea {
   font-size: 38px;
   margin-bottom: 0;
   text-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.light-mode.home .contact h2{
+  color: #333;
+  text-shadow: none;
 }
 .contact form {
   display: flex;
@@ -31,14 +32,14 @@ textarea {
   gap: 50px;
   padding: 40px 30px;
   align-items: center;
-  background-color: #121212;
+  background-color: #202020;
   border-radius: 28px;
-  box-shadow: 0 0 .2rem #fff,
-              0 0 .2rem #fff,
-              0 0 2rem #0067dc,
-              0 0 0.8rem #0067dc,
-              0 0 2.8rem #0067dc,
-              inset 0 0 1.3rem #0067dc;
+  box-shadow: 0 0 0.2rem #fff, 0 0 0.2rem #e8e8e8, 0 0 2rem #e8e8e8, 0 0 0.8rem #0067dc, 0 0 2.8rem #0067dc, inset 0 0 1.3rem #0067dc
+}
+.light-mode.home .contact form{
+  background: #e8e8e8;
+  box-shadow:  19px 19px 50px #c8c8c8,
+             -19px -19px 50px #ffffff;
 }
 .formfade {
   display: flex;
@@ -54,10 +55,17 @@ textarea {
   align-items: center;
   gap: 8px;
   color: #fff;
+  margin: 10px 0px;
+}
+.light-mode.home .reseaux p{
+  color: #333;
 }
 .reseaux a {
   color: white;
   text-decoration: underline;
+}
+.light-mode.home .reseaux a{
+  color: #333;
 }
 .nomprenom {
   display: flex;
@@ -75,6 +83,10 @@ textarea {
   font-size: 22px;
   margin: 0;
   text-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.light-mode.home .formulaire h3{
+  color: #333;
+  text-shadow: none;
 }
 .form__group {
   display: flex;
@@ -97,6 +109,10 @@ textarea {
   background: #12121230;
   transition: border-color 0.2s;
 }
+.light-mode.home .form__field{
+  background-color: #bbbbbb45;
+  color: #333;
+}
 .form__field::placeholder {
   color: transparent;
 }
@@ -116,6 +132,9 @@ textarea {
   font-size: 15px;
   color: #ffffff;
 }
+.light-mode.home .form__label{
+  color: #333;
+}
 .form__field:focus ~ .form__label {
   position: absolute;
   top: -10px;
@@ -123,6 +142,9 @@ textarea {
   transition: 0.2s;
   font-size: 15px;
   color: #ffffff;
+}
+.light-mode.home .form__field:focus ~ .form__label{
+  color: #333;
 }
 
 /* reset input */
@@ -242,6 +264,9 @@ textarea {
   transform: translate3d(0, 0, 0);
   transition: all 0.2s ease;
 }
+.light-mode.home .check svg{
+  stroke: #333;
+}
 
 .check svg path {
   stroke-dasharray: 60;
@@ -287,14 +312,34 @@ textarea {
   color: white;
   font-size: 14px;
 }
+.light-mode.home .rgpd label{
+  color: #333;
+}
 .rgpd a {
   color: white;
   text-decoration: underline;
+}
+.light-mode.home .rgpd a{
+  color: #333;
 }
 .msgreseau {
   font-size: 20px;
   max-width: 500px;
   margin-top: 0px;
+}
+.mesuivre{
+  display: flex;
+  flex-direction: column;
+  margin-top: 18px;
+}
+.mesuivre h3{
+  color: white;
+  font-weight: 300;
+  font-size: 20px;
+  margin: 10px 0px;
+}
+.light-mode.home .mesuivre h3{
+  color: #333;
 }
 @media (max-width: 900px) {
   .contact form {

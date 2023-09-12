@@ -9,12 +9,20 @@ import Footer from "../components/Footer";
 import Formations from "../components/Formations";
 import Totop from "../components/Totop";
 import Recomandations from "../components/Recomandations";
+import ToggleDarkModeButton from "../components/ToggleDarkModeButton";
+import { useState } from "react";
 
 const Home = () => {
+  const [isDarkMode, setIsDarkMode] = useState(false);
+
+  const toggleDarkMode = () => {
+    setIsDarkMode(!isDarkMode);
+  };
   return (
-    <div className="home">
+    <div className={`${isDarkMode ? 'light-mode' : ''} home`}>
       <Background />
       <Navbar />
+      <ToggleDarkModeButton toggleDarkMode={toggleDarkMode} />
       <Card />
       <Projets />
       <Experience />

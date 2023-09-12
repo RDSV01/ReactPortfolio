@@ -17,6 +17,10 @@
     top: 50%;
     position: sticky;
 }
+.light-mode.home .outerdiv h2{
+	color: #333;
+	text-shadow: none;
+  }
 .innerdiv
 {
 	display: flex;
@@ -26,10 +30,10 @@
 }
 .eachdiv
 {
-	background:#49556B;
+	background:#202020;
 	padding: 1rem 2rem;
     border-radius: 0.8rem;
-    box-shadow: 0px 0px 20px #6d6b6b6b;
+    box-shadow: 0px 0px 20px #6d6b6b8c;
     color: white;
 	height: fit-content;
 }
@@ -111,6 +115,7 @@
     color: #ffffff;
     font-weight: 500;
     line-height: 1.5;
+	white-space: pre-line;
 }
 .review button{
 	padding: 5px 12px;

@@ -10,11 +10,35 @@
     margin-top: 180px;
     padding: 30px;
 }
+
+.float_emoji{
+  width: 65px;
+  height: 65px;
+}
+.emoji_1 {
+  position: absolute;
+  top: -25px;
+  left: 15%;
+}
+.emoji_2 {
+  position: absolute;
+  left: 20%;
+  bottom: -65px;
+}
+.emoji_3 {
+  position: absolute;
+  right: 21%;
+  bottom: 20px;
+}
 .card h1{
     color: rgb(224, 224, 224);
     margin: 0;
     font-size: 28px;
     text-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.light-mode.home .card h1{
+  color: #333;
+  text-shadow: none;
 }
 .card h2{
     color: white;
@@ -24,12 +48,20 @@
     text-align: start;
     text-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
+.light-mode.home .card h2{
+  color: #333;
+  text-shadow: none;
+}
 .card p{
     color: white;
     font-size: 22px;
     margin: 0;
     margin-left: -10px;
     text-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.light-mode.home .card p{
+  color: #333;
+  text-shadow: none;
 }
 .card h3{
     color: rgb(224, 224, 224);
@@ -38,8 +70,13 @@
     margin-top: 8px;
     text-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
+.light-mode.home .card h3{
+  color: #333;
+  text-shadow: none;
+}
 .card span{
     white-space: nowrap;
+    transition: all .01s ease-out;
 }
 
 .photoprofile img{
@@ -47,65 +84,50 @@
     height: 240px;
     clip-path: ellipse(50% 50%) ;
 }
-.boutonsReseaux{
-    display: flex;
-    gap: 15px;
-    flex-wrap: wrap;
+/* Ajoutez ces styles à votre fichier CSS */
+.rocketAnimation {
+  animation-name: rocketLaunch;
+  animation-duration: 1s;
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: forwards;
 }
-button {
-    font-family: inherit;
-    font-size: 18px;
-    background: #12121299;
-    color: white;
-    padding: 0.5em 1em;
-    padding-left: 0.9em;
-    display: flex;
-    align-items: center;
-    border: none;
-    border-radius: 14px;
-    overflow: hidden;
-    transition: all 0.2s;
-    margin-top: 10px;
-    cursor: pointer;
+
+@keyframes rocketLaunch {
+  0% {
+    transform: translateY(0) translateX(0);
   }
-  
-  button span {
-    display: block;
-    margin-left: 0.5em;
-    transition: all 0.3s ease-in-out;
+  100% {
+    transform: translateY(-1000px) translateX(1000px);
   }
-  
-  button svg {
-    display: block;
-    transform-origin: center center;
-    transition: transform 0.3s ease-in-out;
+}
+
+@media (max-width: 1500px){
+.emoji_1 {
+    left: 12%;
+}
+.emoji_2 {
+    left: 16%;
+}
+.emoji_3 {
+  right: 16%;
+}
+}
+@media (max-width: 1300px){
+.emoji_1 {
+    left: 5%;
+}
+.emoji_2 {
+    left: 10%;
+}
+.emoji_3 {
+  right: 8%;
+}
+}
+@media (max-width: 1173px) {
+  .float_emoji{
+    display: none;
   }
-  
-  button:hover .svg-wrapper {
-    animation: fly-1 0.6s ease-in-out infinite alternate;
-  }
-  
-  button:hover svg {
-    transform: translateX(1.2em) rotate(45deg) scale(1.1);
-  }
-  
-  button:hover span {
-    transform: translateX(5em);
-  }
-  
-  button:active {
-    transform: scale(0.95);
-  }
-  
-  @keyframes fly-1 {
-    from {
-      transform: translateY(0.1em);
-    }
-  
-    to {
-      transform: translateY(-0.1em);
-    }
-  }
+}
   
   @media (max-width: 720px) {
     .card{
@@ -114,6 +136,7 @@ button {
         margin-top: 70px;
         gap: 12px;
     }
+    
     .photoprofile img{
         width: 150px;
         height: 150px;

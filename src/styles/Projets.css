@@ -1,3 +1,24 @@
+/* Slider container */
+.slider-container {
+  display: flex;
+  overflow-x: scroll;
+  scroll-snap-type: x mandatory;
+  scrollbar-width: none; /* Pour masquer la barre de défilement */
+  -ms-overflow-style: none;
+}
+
+/* Style de chaque diapositive */
+.card-project {
+  flex: 0 0 auto;
+  scroll-snap-align: start;
+  margin-right: 20px; /* Espacement entre les diapositives */
+}
+
+/* Masquer les flèches de défilement du navigateur */
+.slider-container::-webkit-scrollbar {
+  display: none;
+}
+
 .projets {
   padding-top: 120px;
 }
@@ -11,19 +32,19 @@
   color: white;
   text-decoration: underline;
 }
+.light-mode.home .container a{
+  color: #333;
+  text-shadow: none;
+}
 .container h2 {
   color: white;
   text-align: center;
   margin-top: 45px;
   text-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
-@media screen and (min-width: 992px) and (max-width: 1439px) {
-  /* .container {
-      max-width: 1279px !important;
-      padding: 0 !important;
-      margin: 0 80px !important;
-      width: auto !important;
-    } */
+.light-mode.home .container h2{
+  color: #333;
+  text-shadow: none;
 }
 @media screen and (max-width: 991px) {
   .container {
@@ -49,6 +70,7 @@
 }
 
 .container-title {
+  position: relative;
   text-align: center;
   color: white;
   letter-spacing: 3px;
@@ -56,6 +78,11 @@
   margin-bottom: 0;
   font-weight: 600;
   text-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  z-index: 1;
+}
+.light-mode.home .container-title{
+  color: #333;
+  text-shadow: none;
 }
 
 .card-project {
@@ -91,8 +118,7 @@
   flex-direction: column;
   justify-content: space-between;
   position: relative;
-  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-  min-height: 280px;
+  min-height: 296px;
 }
 
 .bg-green-box::after,
@@ -161,9 +187,30 @@
 .card-project:hover {
   animation: bounce 1s ease-out;
 }
+.swiper-backface-hidden .swiper-slide{
+  display: flex;
+  justify-content: center;
+}
+.swiper-pagination-fraction, .swiper-pagination-custom, .swiper-horizontal > .swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal{
+  bottom: var(--swiper-pagination-bottom, -6px) !important;
+}
+.swiperprojets{
+  width: 80%;
+}
+.swiper-pagination-bullet {
+  background: white !important;
+}
+.light-mode.home .swiper-pagination-bullet{
+  background: #333 !important;
+}
+@media screen and (max-width: 900px) {
+  .swiperprojets{
+    width: 100%;
+  }
+}
 @media screen and (max-width: 720px) {
   .card-project{
-    max-width: 270px;
+    max-width: fit-content;
   }
   .card-project:hover {
     animation: none;
