@@ -7,6 +7,7 @@
   font-family: "Poppins";
   scroll-behavior: smooth;
   overflow-x: hidden;
+  width: 100vw;
 }
 body {
   margin: 0;
@@ -50,5 +51,5 @@ a {
   background-color: #222;
 }
 .light-mode.home{
-  background-color: #f8f8f8;
+  background-color: #e8e8e8;
 }

@@ -35,7 +35,7 @@ const Card = () => {
           <h2>
             Raphaël <span>Da Silva</span>
           </h2>
-          <h1>Développeur FullStack</h1>
+          <h1>Développeur Web FullStack</h1>
           <h3>"Passion pour le code, création sans limite."</h3>
           <BoutonsReseaux/>
         </div>

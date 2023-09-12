@@ -200,6 +200,9 @@
 .swiper-pagination-bullet {
   background: white !important;
 }
+.light-mode.home .swiper-pagination-bullet{
+  background: #333 !important;
+}
 @media screen and (max-width: 900px) {
   .swiperprojets{
     width: 100%;

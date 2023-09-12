@@ -115,6 +115,7 @@
     color: #ffffff;
     font-weight: 500;
     line-height: 1.5;
+	white-space: pre-line;
 }
 .review button{
 	padding: 5px 12px;
