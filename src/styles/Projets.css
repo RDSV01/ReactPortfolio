@@ -149,7 +149,7 @@
 .card-project-description {
   font-weight: 300;
   line-height: 32px;
-  color: rgba(255, 255, 255, 0.7);
+  color: #eaeaea;
   font-size: 15px;
   max-width: 470px;
   margin-top: 0;
@@ -160,8 +160,8 @@
   gap: 8px;
 }
 .badge-techno-projet p {
-  color: #b0afb0;
-  border: solid 2px #5f6fad;
+  color: #eaeaea;
+  border: solid 2px #0067dc;
   border-radius: 20px;
   padding: 4px;
   padding-left: 8px;
