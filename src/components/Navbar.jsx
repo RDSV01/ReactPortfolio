@@ -8,7 +8,7 @@ const Navbar = () => {
     setIsChecked(false);
   };
   const handleMenuButtonClick = (event) => {
-    event.preventDefault(); // Empêche le comportement par défaut du clic sur le bouton
+    event.preventDefault();
     setIsChecked(!isChecked);
   };
   return (
