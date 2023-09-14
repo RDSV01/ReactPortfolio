@@ -3,7 +3,7 @@ import "../styles/ToggleDarkModeButton.css";
 
 function ToggleDarkModeButton({ toggleDarkMode }) {
   return (
-    <label className="switch">
+    <label className="switch" htmlFor="toggleswitch">
       <span className="sun">
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
           <g fill="#ffd43b">
@@ -22,6 +22,8 @@ function ToggleDarkModeButton({ toggleDarkMode }) {
         type="checkbox"
         className="input"
         defaultChecked
+        id="toggleswitch"
+        aria-label="Switch dark/light mode"
       ></input>
       <span className="slider"></span>
     </label>

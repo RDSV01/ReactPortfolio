@@ -30,6 +30,17 @@
   right: 21%;
   bottom: 20px;
 }
+.bienvenue{
+  color: white;
+  font-size: 22px;
+  margin: 0;
+  margin-left: -10px;
+  text-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.light-mode.home .bienvenue{
+color: #333;
+text-shadow: none;
+}
 .card h1{
     color: rgb(224, 224, 224);
     margin: 0;
@@ -40,7 +51,7 @@
   color: #333;
   text-shadow: none;
 }
-.card h2{
+.nomprenom{
     color: white;
     font-size: 64px;
     margin-bottom: 5px;
@@ -48,29 +59,19 @@
     text-align: start;
     text-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
-.light-mode.home .card h2{
+.light-mode.home .nomprenom{
   color: #333;
   text-shadow: none;
 }
-.card p{
-    color: white;
-    font-size: 22px;
-    margin: 0;
-    margin-left: -10px;
-    text-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-}
-.light-mode.home .card p{
-  color: #333;
-  text-shadow: none;
-}
-.card h3{
+
+.citation{
     color: rgb(224, 224, 224);
     font-size: 20px;
     font-weight: 300;
     margin-top: 8px;
     text-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
-.light-mode.home .card h3{
+.light-mode.home .citation{
   color: #333;
   text-shadow: none;
 }

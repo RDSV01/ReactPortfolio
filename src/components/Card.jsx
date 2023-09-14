@@ -27,16 +27,16 @@ const Card = () => {
           <img src="./assets/img/emoji_laptop.png" className="float_emoji" id="emoji_2" alt="" />
         </JackInTheBox>
         <JackInTheBox className="emoji_3" delay={400}>
-           <img src="./assets/img/emoji_rocket.gif" className={`float_emoji ${rocketAnimation ? "rocketAnimation" : ""}`} id="emoji_3" alt="" onClick={handleRocketClick} />
+           <img src="./assets/img/emoji_rocket-min.gif" className={`float_emoji ${rocketAnimation ? "rocketAnimation" : ""}`} id="emoji_3" alt="" onClick={handleRocketClick} />
         </JackInTheBox>
       <Slide duration={800} triggerOnce>
         <div className="texte">
-          <p>Bienvenue ! Je suis</p>
-          <h2>
+          <p className="bienvenue">Bienvenue ! Je suis</p>
+          <h2 className="nomprenom">
             Raphaël <span>Da Silva</span>
           </h2>
           <h1>Développeur Web FullStack</h1>
-          <h3>"Passion pour le code, création sans limite."</h3>
+          <p className="citation">"Passion pour le code, création sans limite."</p>
           <BoutonsReseaux/>
         </div>
       </Slide>
