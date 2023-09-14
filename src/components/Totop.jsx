@@ -21,7 +21,7 @@ const Totop = () => {
 
   return (
     <div className={`totop ${isVisible ? "visible" : ""}`}>
-      <a href="#">
+      <a href="#" aria-label="Scroll to top">
         <svg
           xmlns="http://www.w3.org/2000/svg"
           width="24"
