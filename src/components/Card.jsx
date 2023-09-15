@@ -12,10 +12,9 @@ const Card = () => {
   const handleRocketClick = () => {
     setRocketAnimation(true);
 
-    // Réinitialisez l'animation après un certain délai
     setTimeout(() => {
       setRocketAnimation(false);
-    }, 1000); // ajustez la durée de l'animation selon vos besoins
+    }, 1000); 
   };
   
   return (
@@ -32,7 +31,7 @@ const Card = () => {
       <Slide duration={800} triggerOnce>
         <div className="texte">
           <p className="bienvenue">Bienvenue ! Je suis</p>
-          <h2 className="nomprenom">
+          <h2 className="nomprenomcard">
             Raphaël <span>Da Silva</span>
           </h2>
           <h1>Développeur Web FullStack</h1>

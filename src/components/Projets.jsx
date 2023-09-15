@@ -13,24 +13,18 @@ const Projets = () => {
   const [hasReloaded, setHasReloaded] = useState(false);
 
   useEffect(() => {
-    // Fonction pour détecter les changements de la largeur de l'écran
     const handleResize = () => {
       const isMobileNow = window.innerWidth <= 768;
 
       if (!hasReloaded && isMobileNow !== isMobile) {
-        // Recharge la page uniquement si elle n'a pas déjà été rechargée,
-        // et si la largeur de l'écran change entre mobile et non mobile.
         setHasReloaded(true);
         window.location.reload();
       }
 
       setIsMobile(isMobileNow);
     };
-
-    // Écoute les événements de redimensionnement de la fenêtre
     window.addEventListener("resize", handleResize);
 
-    // Nettoyage de l'écouteur d'événement lorsque le composant est démonté
     return () => {
       window.removeEventListener("resize", handleResize);
     };
@@ -41,7 +35,7 @@ const Projets = () => {
       <div className="container">
         <p className="container-title">Projets</p>
 
-        {isMobile ? ( // Utilisez un ternaire pour choisir entre le slider et le marquee
+        {isMobile ? (
           <Swiper
             className="swiperprojets"
             modules={[Pagination, Scrollbar]}

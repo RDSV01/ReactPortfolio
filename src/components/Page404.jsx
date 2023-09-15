@@ -1,4 +1,3 @@
-import React from "react";
 import "../styles/Page404.css";
 
 const Page404 = () => {

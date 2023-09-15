@@ -1,4 +1,3 @@
-import React from "react";
 import "../styles/ToggleDarkModeButton.css";
 
 function ToggleDarkModeButton({ toggleDarkMode }) {
