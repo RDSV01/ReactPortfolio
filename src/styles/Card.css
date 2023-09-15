@@ -51,7 +51,7 @@ text-shadow: none;
   color: #333;
   text-shadow: none;
 }
-.nomprenom{
+.nomprenomcard{
     color: white;
     font-size: 64px;
     margin-bottom: 5px;
@@ -59,7 +59,7 @@ text-shadow: none;
     text-align: start;
     text-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
-.light-mode.home .nomprenom{
+.light-mode.home .nomprenomcard{
   color: #333;
   text-shadow: none;
 }
@@ -142,16 +142,16 @@ text-shadow: none;
         width: 150px;
         height: 150px;
     }
-    .card h2{
+    .nomprenomcard{
         font-size: 38px;
     }
-    .card p{
+    .bienvenue{
         font-size: 18px;
     }
     .card h1{
         font-size: 22px;
     }
-    .card h3{
+    .citation{
         font-size: 18px;
     }
   }

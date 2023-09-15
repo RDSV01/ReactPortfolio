@@ -11,7 +11,6 @@ const Formations = () => {
   const [isMobile, setIsMobile] = useState(window.innerWidth <= 768);
 
   useEffect(() => {
-    // Fonction pour détecter les changements de la largeur de l'écran
     const handleResize = () => {
       setIsMobile(window.innerWidth <= 768);
     };
